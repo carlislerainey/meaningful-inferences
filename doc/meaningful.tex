@@ -1,0 +1,128 @@
+%
+\documentclass[12pt]{article}
+
+% The usual packages
+\usepackage{fullpage}
+\usepackage{breakcites}
+\usepackage{setspace}
+\usepackage{endnotes}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{rotating}
+\usepackage{dcolumn}
+\usepackage{longtable}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{url}
+\usepackage{natbib}
+\usepackage{framed}
+\usepackage{lipsum}
+\usepackage[font=small,labelfont=sc]{caption}
+\restylefloat{table}
+\bibpunct{(}{)}{;}{a}{}{,}
+
+% Set paragraph spacing the way I like
+\parskip=0pt
+\parindent=20pt
+
+% Define mathematical results
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{claim}{Claim}
+\newenvironment{proof}[1][Proof]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{definition}[1][Definition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{example}[1][Example]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{remark}[1][Remark]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+% Set up fonts the way I like
+\usepackage{tgpagella}
+\usepackage[T1]{fontenc}
+\usepackage[bitstream-charter]{mathdesign}
+
+
+
+%% Set up lists the way I like
+%Redefine the first level
+\renewcommand{\theenumi}{\arabic{enumi}.}
+\renewcommand{\labelenumi}{\theenumi}
+%Redefine the second level
+\renewcommand{\theenumii}{\alph{enumii}.}
+\renewcommand{\labelenumii}{\theenumii}
+%Redefine the third level
+\renewcommand{\theenumiii}{\roman{enumiii}.}
+\renewcommand{\labelenumiii}{\theenumiii}
+%Redefine the fourth level
+\renewcommand{\theenumiv}{\Alph{enumiv}.}
+\renewcommand{\labelenumiv}{\theenumiv}
+
+% Create footnote command so that my name
+% has an asterisk rather than a one.
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+\hypersetup{
+ pdftitle={Meaningful Inferences}, % title
+ pdfauthor={Kelly McCaskey and Carlisle Rainey}, % author
+ pdfkeywords={hypothesis testing} {confidence intervals} {substantive significance}
+ pdfnewwindow=true, % links in new window
+ colorlinks=true, % false: boxed links; true: colored links
+ linkcolor=BrickRed, % color of internal links
+ citecolor=BrickRed, % color of links to bibliography
+ filecolor=BrickRed, % color of file links
+ urlcolor=BrickRed % color of external links
+}
+
+\begin{document}
+
+\begin{center}
+{\LARGE Meaningful Inferences\symbolfootnote[1]{We thank [many people]. The analyses presented here were conducted with \texttt{R} 3.1.0 and Stata 13. All data and computer code necessary for replication are available at [GitHub Repositroy].}}\\\vspace{2mm}
+
+\vspace{10mm}
+
+Kelly McCaskey\symbolfootnote[2]{Kelly McCaskey is a Ph.D. student in the Department of Political Science, University at Buffalo, SUNY, 520 Park Hall, Buffalo, NY 14260 (\href{mailto:kellymcc@buffalo.edu}{kellymcc@buffalo.edu}).}
+
+\vspace{3mm}
+
+Carlisle Rainey\symbolfootnote[3]{Carlisle Rainey is an Assistant Professor of Political Science, University at Buffalo, SUNY, 520 Park Hall, Buffalo, NY 14260 (\href{mailto:rcrainey@buffalo.edu}{rcrainey@buffalo.edu}).}
+\end{center}
+
+% Remove page number from first page
+%\thispagestyle{empty}
+
+\vspace{10mm}
+
+
+% Abstract
+{\centerline{\textbf{Abstract}}}
+\begin{quote}\noindent [Abstract here.] \end{quote}
+\thispagestyle{empty}
+
+%\end{document} % uncomment to make a title-page with author info
+
+\newpage
+\doublespace
+% Set first page of text as page 1. I don't care for this
+%   feature because then the page numbers don't correspond
+%   to the pdf pages.
+%\setcounter{page}{1}
+
+\section*{Introduction}
+
+
+%\singlespace 
+%\normalsize
+%\singlespace
+%\bibliographystyle{apsr_fs}
+%\bibliography{bibliography}
+
+\end{document}
+
