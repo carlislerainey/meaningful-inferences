@@ -80,13 +80,13 @@
 }
 
 % enable comments in pdf
-\newcommand{\comment}[1]{\textcolor{red}{#1}}
+\newcommand{\comment}[1]{\textcolor{blue}{#1}}
 
 \begin{document}
 
 \begin{center}
 {\LARGE Meaningful Inferences}\\\vspace{2mm}
-{\large The Key to Substantive Significance is Estimation, Not Hypothesis Tests\symbolfootnote[1]{We thank [many people]. The analyses presented here were conducted with \texttt{R} 3.1.0 and Stata 13. All data and computer code necessary for replication are available at [GitHub Repositroy].}}\\\vspace{2mm}
+{\large \comment{[subtitle here]}\symbolfootnote[1]{We thank [many people]. The analyses presented here were conducted with \texttt{R} 3.1.0 and Stata 13. All data and computer code necessary for replication are available at [GitHub Repositroy].}}\\\vspace{2mm}
 
 
 \vspace{10mm}
@@ -168,11 +168,13 @@ A p-value is simply the probability of observing data at least as extreme as the
 
 The standard scientific practice in political science computes substantively interpretable estimates of effects and (1) determines whether these estimates are statistically significant and, if so, (2) makes a judgement about whether the magnitude is substantively important. \comment{[I need to add a cite here, but perhaps several examples will do.]} This two step procedure has three unfortunate consequences.
 
+\singlespace
 \begin{enumerate}
 \item This tempts political scientists to treat all results that are not statistically significant similarly, drawing no distinction between large, imprecise estimates and small, precise estimates (see Rainey 2014).
 \item This tempts political scientists to treat all statistically significant and substantively large estimates similarly, drawing no distinction between large, imprecise estimates and large, precise estimates.
 \item This tempts political scientists to treat ``barely significant,'' large estimates and ``almost significant,'' large estimates quite differently, drawing a strong distinction between two similar estimates with similar uncertainty.
 \end{enumerate}
+\doublespace
 
 \begin{figure}[h]
 \begin{center}
@@ -204,6 +206,72 @@ Study E & ``not statistically significant'' & ``not statistically significant'' 
 
 The key takeaway point is that it is importance to apply similar standards of evidence to arguments for positive (or negative) effects and arguments for meaningfully positive (or meaningfully negative) effects. The usual logic of hypothesis testing requires that the researcher only declare that an effect is positive if and only if the evidence points overwhelming against negative effects. Similarly, researchers should not declare a positive estimate substantively meaningful simply because it is inconsistent with with negative effects and above some threshold. A better standard of evidence would require that researchers declare an effect meaningful if and only if it is inconsistent with negligible effects.
 
+
+\section*{A Compelling Argument for a Meaningful Effect}
+
+Researchers can make much more compelling and transparent arguments for meaningful effects by explicitly testing the claims we are making. For example, if  a researcher claims that an effect is positive and substantively meaningful, then the research hypothesis is not $H_r: \Delta > 0$. Instead, it's $H_r: \Delta > m$, where $m$ represents the researchers judgment about the smallest substantively interesting effect (or the largest substantively negligible effect). There is not need to jettison the entire framework. In fact, the problems identified above can be addressed and the usual hypothesis testing framework can be kept intact if researchers are simply willing to apply their substantive judgment about which effects are and are not meaningful to their hypotheses rather than the estimated magnitude. 
+
+The current practice in political science for arguing for a meaningful effect proceeds as follows:
+
+\singlespace
+\begin{enumerate}
+\item Hypothesis that the effect is positive (or negative)
+\item Test the directional hypothesis.
+\item If the null hypothesis can be rejected, then compute a substantively interpretable measure of the estimated effect size and make a substantive judgment about whether the estimate is substantively meaningful or not.
+\end{enumerate}
+\doublespace
+The alternative approach that I propose proceeds as follows:
+
+\singlespace
+\begin{enumerate}
+\item Hypothesize that the effect is positive and substantively meaning (or negative and substantively meaningful).
+\item Make a substantive judgment about the smallest substantively meaningful effect.
+\item Test the research hypothesis.
+\end{enumerate}
+\doublespace
+
+\subsection*{Stating a Research Hypothesis of a Meaningful Effect}
+
+The first step is easy, but important. In order to make compelling arguments for meaningful effects, researcher must clearly state their claims. Rather than simply hypothesizing that an effect is positive or negative, researcher must make their claim that a variable has a meaningful effect from the outset. For example, Levendusky and Horowitz (2012) hypothesize that ``bipartisan support in Congress for the president's policy should decrease audience costs.'' Notice that this hypothesizes a direction, but not a magnitude of the effect. Yet in discussing this hypothesis, Levendusky and Horowitz write: 
+
+\begin{quote}
+This type of unexpected (disconfirming) cue has an especially large effect on voters' decision-making processes (Baum and Groeling 2009; Eagly, Wood, and Chaiken 1978). In effect, it sends voters a strong signal that this is not a partisan decision, but rather a decision about what is best for the nation. Further, the fact that even the president's rivals supported his decision suggests to voters that the president did make the right call, which should lead all voters (regardless of partisan affiliation) to punish the president less harshly, thereby minimizing audience costs. [italics ours]
+\end{quote}
+
+Thus, Levendusky and Horowitz carefully theorize about the magnitude of the effect, but only include the direction implied by the theory, and not the magnitude, into their hypothesis. They could improve the test of their theory by building the implication about the size of the effect directly into their hypothesis, predicting that ``bipartisan support in Congress for the president's policy should substantially decrease audience costs.'' I have simply added ``substantially'' to their hypothesis. This provides a strong indication to readers (and the researcher) that the theory implies the effect should be large and the researcher will provide a strong argument for a large negative effect, as opposed to simply a negative effect. 
+
+
+\subsection*{Choosing $m$}
+
+In order to make a compelling argument that an effect is substantively meaningful, the research must carefully define exactly which effects are and are not substantively meaningful. This quantity is the identical concept proposed by Rainey (2014), and as Rainey notes, political scientists should not insist on hard and fast rules for judging the effects that are and are not substantively meaningful (though such rules of thumb have been presented, see Glass 1976 \comment{[add a cite to Cohen here as well]}). Instead, we must insist that substantive scholars making substantive claims about politics also make substantive judgments about the importance of their effects. Thompson (2001) notes for example, that ``if people interpreted effect sizes with the same rigidity that $\alpha = 0.05$ has been used in statistical testing, we would merely be being stupid in another metric.'' Kirk (1996) notes that this judgment is ``influenced by a variety of factors, including the researcher's value system, societal concerns, assessment of costs and benefits, and so on." Despite this element of subjectivity, Thompson (2002) writes: ``[T]he existence of effect size benchmarks should not justify abrogating the responsibility for arguing for effect import in the specific context of a given study. It is not necessary to have universal benchmarks regarding what effect sizes may be deemed noteworthy. The reader with a value system widely different than that of an author might reasonably disagree with the author about whether the effect size is noteworthy and then simply ignore the study.'' 
+
+
+Formal hypothesis tests and judgments about substantive importance are qualitatively different decisions and have different strengths and weaknesses. Estimation and hypothesis tests are relatively automatic and ``objective,'' but are not at all transparent \comment{[Here we can mention the number of regression models people fit, etc. Add lots of cites to this point.]} Researchers do not fit one model and report the single $p$-value. Instead they fit many models and report the one that ``makes most sense'' in light of their approach, theoretical model, normative concerns, and the results of the model. \comment{[add some cites to the p-hacking literature, such as Justin's paper.]} Substantive judgments about effect sizes, however, require a large initial investment of careful thought to argue that certain effects are or are not substantively important. However, this judgment is quite transparent. Readers are free to reject the author's judgment and substitute their own. Further, ``automatic'' and ``objective'' procedures are not always (or perhaps usually) desirable. Substantive scholars making substantive points about politics should be allowed and encouraged to make substantive judgments about magnitude. Indeed, Kirk (2001 \comment{[check if we can get this from the 1996 paper]}) writes:
+
+\begin{quote}
+[R]esearchers have an obligation to make this kind of judgment. No one is in a better position than the researcher who collected and analyzed the data to decide whether the effects are trivial or not. It is a curious anomaly that researchers are trusted to make a variety of complex decisions in the design and execution of an experiment, but in the name of objectivity they are not expected to nor even encouraged to decide whether the effects are practically significant'' (p. 214)
+\end{quote}
+
+\section*{Testing a Hypothesis of a Meaningful Effect}
+
+Once the researcher has clearly identified that set of effects that he considers substantively meaningful, the testing problem is straightforward. For an effect of interest $\Delta$, the a researcher positing a ``substantively meaningful, positive effect'' must simply test her research hypothesis $H_r: \Delta > m$ against the null hypothesis $H_0: \Delta \leq m$. For a researcher positing a ``substantively meaningful, negative effect'' must simply test her research hypothesis $H_r: \Delta < -m$ against the null hypothesis $H_0: \Delta \geq -m$.\footnote{Though rarely used in practice, this the way hypothesis testing is introduced in in introductory textbooks.}
+
+The case of $t$-statistics illustrates the parallel between testing for a meaningful positive effect and simply testing for a positive effect. If a researcher simply wishes to argue that an effect is positive (thoough perhaps substantively irrelevant), the $t$-statistic is given by $t = \dfrac{\Delta}{\sqrt{\hat{Var}(\Delta)}}$. If a researchers wish to argue that an effect is positive and substantively meaningful, then the required $t$-statistic is given by $t = \dfrac{\Delta - m}{\sqrt{\hat{Var}(\Delta)}}$. For hypotheses of meaningful negative effects, the required $t$-statistics is given by [something here consistent with notation in a book.]. The researcher can then use these $t$-values to compute $p$-values and determine if the respective null hypothesis of ``no effect'' and ``a negligible effect'' can be rejected.
+
+\subsection*{Confidence Intervals}
+
+While the hypothesis testing framework is sometimes clear and convenient, confidence intervals offer even more information and are easier for readers (and researchers) to interpret. Specifically, the researcher simply needs to check that a 90\% confidence interval contains values that are only consistent with the research hypothesis of a meaningful effect. Therefore, if the 90\% confidence interval contains only large, meaningful effects, then the researcher can confidently reject small, negligible effects. However, if the 90\% confidence contains effects that are inconsistent with the hypothesis of a meaningful effect, such as small, negligible effects, the evidence for the researchers claim is (correctly) identified as weaker. 
+
+A $100(1-\alpha)$\% confidence interval contains the set of values that cannot be rejected by a size-$\alpha$ two-tailed test. Thus, all values $u^{+/-}_{\alpha}$ that fall outside (i.e., above or below) the confidence interval are rejected by a two-tailed test of size $\alpha$. Confidence intervals have a similar relationship with one-tailed tests. All values $u^{-}_{2\alpha}$ that fall \textit{below} a $100(1-2\alpha)$\% are rejected by a one-tailed test of the null hypothesis that the true parameter lies at or below $u^{-}_{2\alpha}$. Similarly, all values $u^{+}_{2\alpha}$ that fall \textit{above} a $100(1-2\alpha)$\% are rejected by a one-tailed test of the null hypothesis that the true parameter lies at or above $u^{+}_{2\alpha}$ (see Achen 1982 and Casella and Berger 2002, pp. 419-423). Thus, there is a one-to-one correspondence between one- and two-tailed hypothesis tests of size $\alpha$ and 90\% and 95\% confidence intervals respectively (see esp. Casella and Berger 2002, pp. 419-423).
+Concretely, if the researcher predicts that an effect is positive and finds that the 90\% confidence interval contains only positive effects, this is equivalent to rejecting the null hypothesis that the effect is less than or equal to zero at the 0.05 level.\footnote{Similarly, if the researcher predicts that an effect is \textit{negative} and finds that the 90\% confidence interval contains only \textit{negative} effects, this is equivalent to rejecting the null hypothesis that the effect is \textit{greater} than or equal to zero at the 0.05 level (see Freedman, Pisani, and Purves 2007 pp. 383-385 for more on this point and DeGroot and Schervish 2012 pp. 485-493 for an alternative perspective).}
+
+Thus, confidence intervals partition the parameter space into the effects that are plausible (given the data and the model) and those that are not.\footnote{Some care is warranted in interpreting confidence intervals . It is tempting for researchers to say that ``because the 90\% confidence interval ranges from 0.1 to 0.4, there is a 90\% chance that the true effect falls between 0.1 and 0'' (Hoestra, Morey, Rouder, and Wagenmakers 2014). However, frequentist confidence intervals require the probability statement to be placed on the statistic (in this case, the confidence interval) and not the parameter. Some statisticians therefore prefers the language ``we can be 95\% confidence that the true value lies between 0.1 and 0.4,'' though this requires a technical understanding of the word confident. In most applied settings, though, frequentist confidence intervals and Bayesian credible intervals, which can be interpreted as probability statements about parameters, are nearly identical (though see Berger and Wolpert 1998, ch. 2), rendering the debate somewhat moot.}
+
+Kirk (2001) writes:
+
+\begin{quote}
+A confidence interval is just as useful as a null hypothesis significance test for deciding whether chance or sampling variation is an unlikely explanation for an observed effect. Unlike a test statistic for, say, a contrast in means, a point estimate and confidence interval use the same unit of measurement as the data. This facilitates the interpretation of results and makes trivial effects harder to ignore.
+\end{quote}
 
 %\singlespace 
 %\normalsize
