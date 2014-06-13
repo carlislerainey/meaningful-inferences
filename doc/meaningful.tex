@@ -20,6 +20,7 @@
 \usepackage{url}
 \usepackage{natbib}
 \usepackage{framed}
+\usepackage{epigraph}
 \usepackage{lipsum}
 \usepackage[font=small,labelfont=sc]{caption}
 \restylefloat{table}
@@ -108,6 +109,8 @@ Carlisle Rainey\symbolfootnote[3]{Carlisle Rainey is Assistant Professor of Poli
 {\centerline{\textbf{Abstract}}}
 \begin{quote}\noindent [Abstract here.] \end{quote}
 \thispagestyle{empty}
+
+\epigraph{...an investigator would be misled less frequently and would be more likely to obtain the information he seeks were he to formulate his experimental problems in terms of the estimation of population parameters, with the establishment of confidence intervals about the estimated values, rather than in terms of a null hypothesis against all possible alternatives.}{Lyle V. Jones (1955, p.407)}
 
 %\end{document} % uncomment to make a title-page with author info
 
@@ -273,6 +276,52 @@ Kirk (2001) writes:
 A confidence interval is just as useful as a null hypothesis significance test for deciding whether chance or sampling variation is an unlikely explanation for an observed effect. Unlike a test statistic for, say, a contrast in means, a point estimate and confidence interval use the same unit of measurement as the data. This facilitates the interpretation of results and makes trivial effects harder to ignore.
 \end{quote}
 
+\section*{Replication of Hultman, Kathman, and Shannon (2013)}
+
+\comment{[Add replication here.]}
+
+\section*{Replication of Kam and Zechmeister (2013)}
+
+\comment{[Add replication here]}
+
+\section*{Conclusion}
+
+\comment{[Discuss situations in which the NHST might be better than confidence intervals.]}
+
+
+[This section needs to be fleshed out a little, but I'm still not quite sure what I want to say yet.]
+
+
+In this paper, I have argued that political scientists should use confidence intervals when arguing that an effect has a substantively large effect (as opposed to simply arguing that an effect is different from zero). However, I'd like to mention a couple of reasons why confidence intervals and magnitude might remain relevant and mention three potential extensions of my argument.
+
+The usual tests of directional hypotheses sometimes teach us something useful. First, while the usually approach to hypothesis testing has faced ample criticism from methodologists, some researchers defend its merits. Indeed, my own argument for moving beyond simple tests of directional hypotheses assumes that we could be learning more from our data, not that current practice teaches us nothing. \comment{[Discuss the criticisms of Hagan 1997 and Wainer 1999 in sufficient detail.]}
+
+In some situations, the scale of the outcome or explanatory might not be interpretable, making the magnitude of effects difficult to discern. In this case, we researchers are left with two options. First, they can simply rely on directional hypothesis tests. Second, they can rely on standardized measures of effect size.
+
+
+While the above suggests that there are a least a couple of situations in which the directional hypothesis test remains the best practice, researchers might consider moving beyond my suggestions in many other situations. 
+
+However, perhaps political scientists should use confidence intervals more generally rather than relying extensively on the null hypothesis significance test.
+
+Rather than relying on the prior determination of m and testing the hypothesis that the effect is substantively meaningful, perhaps researchers should simply compute the confidence interval and see what the data have to say. Note that this approach would work regardless of whether the researcher posts a meaningful, directional, or negligible effect (Rainey 2014). Perhaps political scientists should follow Achen's (1982) advice:
+
+\begin{quote}
+What general advice can be given for interpreting confidence intervals? The best use of them depends on the problem at hand, and no universal instructions can be given. However, one rarely errs by giving a 95\% interval, explaining what the endpoints would mean substantively if each were true, and interpreting the overall results in such a way as to allow for the possibility that either of those endpoints is, in fact, the truth.
+\end{quote}
+
+Jones (1955) suggests that ``an investigator would be misled less frequently and would be more likely to obtain the information he seeks were he to formulate his experimental design problems in terms of the estimation of population parameters, with the establishment of confidence intervals about the estimated values, rather than in terms of a null hypothesis against all possible alternatives. (cited in Tukey 1991)''
+
+
+Confidence intervals allow researchers to quietly drop the requirement of a pre-determined $m$ if they so choose and rely on a more continuous interpretation of the evidence. Rather, they compute the confidence intervals for the substantively interpretable effects first, and then discuss the substantive impacts of the results.
+
+
+It it is will known that researchers can construct confidence intervals equivalently that are equivalent to non-directional hypotheses, directional hypotheses, and hypotheses of negligible effects (Rainey 2014). In this paper, I argue that confidence intervals are useful when researchers are arguing for meaningful effects as well. Further, Gross (2014) offers a useful synthesis of my argument combined with Rainey (2014). But confidence intervals allow data to offer ``hint'' in addition to compelling evidence for claims. Kirk (2001) observes that ``the focus should be on what the data tell us about the phenomenon under investigation.'' If the focus is on summarizing the information offered by the data and not on a detailed binary decision, then the data are allowed to make offer researchers ``hints'' even when the data do not offer strong evidence.
+
+
+\comment{[Add some discussion about hints here.]}
+
+
+
 %\singlespace 
 %\normalsize
 %\singlespace
@@ -280,4 +329,20 @@ A confidence interval is just as useful as a null hypothesis significance test f
 %\bibliography{bibliography}
 
 \end{document}
+
+%%% Miscellaneous text not (yet?) incorporated into the document
+
+
+King, Tomz, and Wittenberg (2000, p. 348) write:
+
+``Having estimated the statistical model, many researchers stop after a cursory look at the signs and `statistical significance? of the effect parameters. This approach obviously fails to meet our criteria for meaningful statistical communication since, for many nonlinear models, [the parameters] are difficult to interpret and only indirectly related to the substantive issues that motivated the research. Instead of publishing the effect coefficients and the ancillary parameters, researchers should calculate and present quantities of direct substantive interest.?'
+
+King (1998, p. 102) writes more strongly: ``[I]f [the model coefficients] have has no substantive interpretation for a particular model, the that model should not be estimated. I say this so emphatically because the inordinate number of journal articles that report logit or other coefficients only to eventually describe them as `unintuitive? or even `meaningless.??? 
+
+
+One criticism of the p-value is that it is misinterpreted in a whole host of ways (e.g., lots of cites). One of these misinterpretations is that statistically significant (and, even more so very significant) results are (1) of large magnitude and (2) substantively important. This logical leap from statistical significant might be explicit, but is more often implicit in that the researcher allows or encourages her readers to make the leap themselves. But as others have made clear, statistical significance does not imply a result is of no substantive importance.
+
+What fewer scholars have recognized, though, is that a statistically significant and substantively meaningful estimate does not imply that we can confidently reject meaningless effects (or alternatively, that we can be confident that the effect is meaningful.) Indeed, it is possible to have an estimate that is substantively large (perhaps a 10\% increase in some applications) and statistically significant (e.g., p < 0.05) that is also consistent with meaningless effects (perhaps a 2\% increase).
+
+Results are never certain, but Tukey (1991) notes that it is crucial for researchers to consider the change of error carefully and clearly commicate the nature and likelihood of the possible errors.
 
