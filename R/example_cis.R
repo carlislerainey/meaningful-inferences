@@ -1,4 +1,3 @@
-
 # Make sure that working directory is set properly
 # setwd("~/Dropbox/projects/meaningful")
 
@@ -7,7 +6,6 @@ rm(list = ls())
 
 # load packages
 library(compactr)
-
 
 # create figure
 pdf("doc/figs/example-cis.pdf", height = 6, width = 8)
@@ -56,4 +54,5 @@ points(est, ht, pch = 19)
 lines(c(lwr, est + est - lwr ), c(ht,ht))
 text(est, ht, "(A)\nLarge, Precise, Significant", pos = 3)
 
+# close graphics device
 dev.off()
