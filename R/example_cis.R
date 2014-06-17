@@ -1,5 +1,5 @@
 # Make sure that working directory is set properly
-# setwd("~/Dropbox/projects/meaningful")
+# setwd("~/Dropbox/projects/meaningful-inferences")
 
 # clear workspace
 rm(list = ls())
