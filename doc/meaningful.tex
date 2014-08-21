@@ -114,7 +114,7 @@
 % Abstract
 {\centerline{\textbf{Abstract}}}
 \begin{quote}\noindent
-Research political science is gradually moving away from an exclusive focus on statistical significance testing and toward an emphasis of effect magnitude. We argue that the current practice of ``magnitude-and-significance'' is only a small improvement over the much maligned ``sign-and-significance'' approach to interpreting statistical results. We argue that instead of interpreting the magnitude of statistically significant effect, researchers should explicitly account for uncertainty when making judgments about substantive significance. This requires the researcher to precisely defined the effects that are substantively meaningful and show that those effects are unlikely to generate the observed data. We use to replications of published work to illustrate our suggested approach.
+Research in political science is gradually moving away from an exclusive focus on statistical significance testing and toward an emphasis on effect magnitude. We argue that the current practice of ``magnitude-and-significance'' is only a small improvement over the much maligned ``sign-and-significance'' approach to interpreting statistical results. We argue that instead of interpreting the magnitude of a statistically significant effect, researchers should explicitly account for uncertainty when making judgments about substantive importance of statistical results. This requires the researcher to precisely define the effects that are and are not substantively meaningful and show that those effects are unlikely to generate the observed data. Using the effect of U.N. troops on civilian casualties during civil war and the effect of yard signs on candidate support, we show that our approach might validate or invalidate claims of substantive significance. 
  \end{quote}
 \thispagestyle{empty}
 
@@ -207,13 +207,12 @@ A $p$-value is simply the probability of observing data at least as extreme as t
 \subsection*{Current Practice Does Not Account for Uncertainty}
 
 The standard scientific practice in political science computes substantively interpretable estimates of effects and (1) determines whether these estimates are statistically significant and, if so, (2) makes a judgement about whether the magnitude is substantively important. \kelly{[We need to add a cite here, but perhaps several examples will do. I'm confidence that this is the way it is done in practice, but we need to either point to a source that suggests the practice or illustrate with several examples that the practice is quite common.]} This two step procedure has three unfortunate consequences. This tempts researchers to...
-\singlespace
+
 \begin{enumerate}
 \item treat all results that are not statistically significant similarly, drawing no distinction between large, imprecise estimates and small, precise estimates (see Rainey 2014).
 \item treat all statistically significant and substantively large estimates similarly, drawing no distinction between large, imprecise estimates and large, precise estimates.
 \item treat ``barely significant,'' large estimates and ``almost significant,'' large estimates quite differently, drawing a strong distinction between two similar estimates with similar uncertainty.
 \end{enumerate}
-\doublespace
 
 Consider, for example the hypothetical studies presented in Figure \ref{fig:example-cis}. If we considered 0.25 the minimal substantively meaningful effect, then only one study, Study A, seems to offer evidence for a substantively meaningful effect. Yet the current practice would also suggest that Study B offers evidence for a substantively meaningful effect as well. And while a large, meaningful effect is certainly plausible based on Study B, it fails to rule out small, negligible effects. In fact, the amount of evidence offers for the hypothesis of a meaningful effect by Study B is similar to that offered by Study C--neither study rules our small, negligible effects. Yet these studies are treated quite differently by the current practice in political science. In fact, the only improvement of the current practice over the sign-and-significance method is that the current practice managed to distinguish between Study D and Study A.
 
@@ -255,23 +254,19 @@ Researchers can make much more compelling and transparent arguments for meaningf
 
 The current practice in political science for arguing for a meaningful effect proceeds as follows:
 
-\singlespace
 \begin{enumerate}
 \item Hypothesize that an effect is positive (or negative).
 \item Test the hypothesis by computing a $p$-value. 
 \item If the null hypothesis can be rejected (i.e., $p < 0.05$), then claim support for the hypothesis and compute a substantively interpretable measure of the estimated effect size and make a substantive judgment about whether the estimate is substantively meaningful or not. If the null hypothesis cannot be rejected (i.e., $p < 0.05$), then note that the evidence is unclear and do not interpret the magnitude of the estimate.
 \end{enumerate}
-\doublespace
 
 The alternative approach that we propose proceeds as follows:
-\singlespace
+
 \begin{enumerate}
 \item Hypothesize that the effect is positive and substantively meaningful (or negative and substantively meaningful).
 \item Make a substantive judgment about the smallest substantively meaningful effect. That is, choose an $m$ such that $m$ represents the smallest substantively meaningful effect.
 \item Test the research hypothesis $H_r: \Delta > m$ using a conventional hypothesis testing approach.
 \end{enumerate}
-
-\doublespace
 
 \subsection*{Stating a Research Hypothesis of a Meaningful Effect}
 
@@ -344,11 +339,11 @@ Bear in mind that the values presented are expected civilian deaths per month. T
 
 However, they do not explicitly take uncertainty into account when arguing for a meaningful effect. Instead, they only check that the estimate is substantively important. They do not consider whether all the plausible effects, given the data, are meaningful.
 
-Following their use of a negative binomial model, we replicate their results, calculate second-differences, and 90\% confidence intervals around the change in the expected civilian deaths as UN military troops increases. Figure \ref{fig:hks-ci} shows these confidence intervals. At an expense of \$2 million, or roughly 2,000 troops, leads to about 65 fewer civilian casualties, on average. However, the data strongly suggest that the effect leads to \textit{at least} 45 fewer civilian casualties and possibly as many as 95. Similarly, an expense of about \$8 million, or 8,000 troops, leads to the prevention of approximately 100 civilian casualties. However, effects small than about 70 fewer civilian deaths are inconsistent with these data and the effect might be as large as 140 fewer deaths. 
+Following their use of a negative binomial model, we replicate their results, calculate first-differences, and 90\% confidence intervals around the change in the expected civilian deaths as UN military troops increases. Figure \ref{fig:hks-ci} shows these confidence intervals. At an expense of \$2 million, or roughly 2,000 troops, leads to about 65 fewer civilian casualties, on average. However, the data strongly suggest that the effect leads to \textit{at least} 45 fewer civilian casualties and possibly as many as 95. Similarly, an expense of about \$8 million, or 8,000 troops, leads to the prevention of approximately 100 civilian casualties. However, effects small than about 70 fewer civilian deaths are inconsistent with these data and the effect might be as large as 140 fewer deaths. 
 
 In this case, the authors have strong evidence for a meaningful effect, even after uncertainty is taken into account. The authors are able to confidently reject trivial effect sizes because the confidence intervals contain only meaningful effects.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale = .8]{figs/hks-ci.pdf}
 \caption{This figure provides first differences, in dollar and troop amounts, and their corresponding number of prevented civilian casualties.}\label{fig:hks-ci}
@@ -357,24 +352,24 @@ In this case, the authors have strong evidence for a meaningful effect, even aft
 
 \section*{Replication of Kam and Zechmeister (2013)}
 
-Kam and Zechmeister (2013) argue that candidate name recognition informs voters about candidate viability.
-
-The authors present three lab experiments to demonstrate the cause link between their concepts of interest but turn to a field experiment to boost the external validity of the results. Through a clever design exploiting routes that parent must use to drop their kids off at school, Kam and Zechmeister expose half of parents in a particular geographic region to a yard sign displaying a fictitious candidate Ben Griffin's name. The other half of parents are not exposed and serve as a control group. The authors then surveyed the parents and asked them to indicate their top three choices for city council seats by choosing among five actual candidates and two fictional candidates (one whose name appeared on yard signs and a second, placebo, whose name did not appear on any signs). The authors summarize their results:
+Kam and Zechmeister (2013) argue that candidate name recognition by directly, by increasing candidates approval, and indirectly, by informing voters about the candidate's viability. The authors present three lab experiments to demonstrate the cause link between their concepts of interest, but they use a field experiment to boost the external validity of the laboratory results. Through a clever design exploiting routes that parent must use to drop their kids off at school, Kam and Zechmeister expose half of parents in a particular geographic region to four yard signs displaying a fictitious candidate Ben Griffin's name. The other half of parents are not exposed and serve as a control group. The authors then surveyed the parents and asked them to indicate their top three choices for city council seats by choosing among five actual candidates and two fictional candidates (one whose name appeared on yard signs and a second, placebo, whose name did not appear on any signs). The authors summarize their results:
 
 \begin{quote}
 Did recognition spurred on by political yard signs increase support for Ben Griffin in the treatment group? To determine if this is so, we examine the extent to which survey respondents selected Ben Griffin as one of their top three choices for council. As shown in [their] Table 3, in the control condition, only 13.9\% of respondents placed Ben Griffin among their top three choices, but in the treatment condition, 23.9\% of respondents placed Ben Griffin among their top three choices. This 10 percentage point difference is sizable given the modesty of the treatment. In light of the small sample size, it is statistically significant at generous levels ($p \approx 0.13$, one-tailed).
 \end{quote}
 
-But can we be confident that this effect is indeed ``sizable''? Are small effects plausible given the data?
+But can we be confident that this effect is indeed ``sizable''? Are small effects plausible given the data? Figure \ref{fig:kz-ci} shows the estimated effects and 90\% confidence intervals. Notice that while the estimated effects are of borderline statistical significance, the estimated effects of about 10 percentage points are quite large. However, much smaller effects are plausible as well. Indeed, the authors cannot even reject the tiniest of effects with these data. While the estimated effects are ``large and significant,'' these data do not offer compelling evidence for a substantively meaningful effect.
 
-
-\kelly{[Add replication here]}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .8]{figs/kz-ci.pdf}
+\caption{This figure provides the estimated treatment effect and 90\% confidence intervals for placing candidate roadsigns along a street which citizens regularly drive on the probability of ranking the named candidate in the top three of seven candidates. The top estimate compares the treatment with the control group (i.e., parents driving along different routes) and the bottom estimate compares the named candidate to the placebo candidate among parents driving along the route with the yard signs.}\label{fig:kz-ci}
+\end{center}
+\end{figure}
 
 \section*{Discussion}
 
-In this paper, we have laid out an approach that allows researchers to make strong empirical arguments that effects of interest are substantively significant. However, we would like to suggests two extensions and raise a caveat.
-
-\subsection*{Caveats}
+In this paper, we have laid out an approach that allows researchers to make strong empirical arguments that effects of interest are substantively significant. However, we would like to suggest several caveats.
 
 Our goal is not to bring past research into question or to suggest that researchers should never test a simple directional hypothesis. Instead, our goal is to provide future researchers with a tool to strengthen their claims and more clearly communicate their evidence to readers in \textit{some} situations. Indeed, while testing a null hypothesis of exactly no effect has received ample criticism from methodologists (Gill 1999, Gross 2014, Hill and Jones 2014), some researchers defend its merits (e.g., Hagan 1997 and Wainer 1999 \carlisle{I might want to add Abelson1997 here as well}). The method we propose, while powerful, has its own limitations.
 
@@ -386,7 +381,7 @@ In the special case of the normal-linear model, measurement error in the outcome
 
 % Measurement Error in the Explanatory Variables
 
-Some researchers claim that measurement errors in explanatory variables attentuate estimated effects by biasing the estimates toward zero. The arguement goes that measurement error works against researchers arguing for directional or substantively meaningful effects. For example, \carlisle{[add an example here]}. However, measurement errors in explanatory variables lead to attentuation only when the measurement error is random and uncorrelated with measurement error in the other explanatory variables. If measurement error exists in multiple variables and the errors are correlated, then the size and direction of the bias is quite difficult to discern. 
+Some researchers claim that measurement errors in explanatory variables attenuate estimated effects by biasing the estimates toward zero. The argument goes that measurement error works against researchers arguing for directional or substantively meaningful effects. For example, \carlisle{[add an example here]}. However, measurement errors in explanatory variables lead to attenuation only when the measurement error is random and uncorrelated with measurement error in the other explanatory variables. If measurement error exists in multiple variables and the errors are correlated, then the size and direction of the bias is quite difficult to discern. 
 
 % Summary paragraph of solutions
 
@@ -401,17 +396,6 @@ In the case of lab experiments, the researcher should think careful about how th
 For example, Mutz and Reeves (2005), in studying the effects of incivility on political trust, use treatments that represent quite extreme versions of the level of civility (extreme politeness and calm) and incivility (disrespect, eye-rolling, raising voices) that we might find in actual campaigns. There are good statistical reasons to rely on treatments with large effects--it increases the power of the study--but this strategy prevents the researcher from drawing meaningful inferences about the magnitude of the effect. Similarly, an experimenter asking a subject to read a newspaper article might have very different effects than the publication of the identical article outside of the lab environment.
 
 This does not imply that lab experiments are overused or less important that other types of experiments. Indeed, the control that makes estimating magnitude of an effect difficult might make discovering the direction of an effect easier. The important point is to recognize that the ``effect'' in a lab experiment might correspond to the ``effect'' in the real world only in direction. Accordingly, researcher should carefully consider this possibility and, if necessary, adjust the empirical claims accordingly, focusing on direction and not magnitude, in this situation, the usual directional hypothesis test maps onto the substantive claim perfectly.
-
-\subsection*{Extensions}
-
-\carlisle{[Perhaps we should discuss Meehl's work here. I'm a little torn on the issue because more precise predictions allow more compelling tests of theories, but political science theories tend to not offer may precise predictions.]}
-
-In this paper, we have argued that political scientists should use confidence intervals when arguing that an explanatory variable has a substantively large effect (as opposed to simply arguing that an effect is different from zero). However, we would like to mention a couple of reasons why confidence intervals and magnitude might remain relevant and mention three potential extensions of our argument.
-
-The usual tests of directional hypotheses sometimes teach us something useful. First, while the usually approach to hypothesis testing has faced ample criticism from methodologists, some researchers defend its merits. Indeed, our argument for moving beyond simple tests of directional hypotheses assumes that we could be learning more from our data, not that current practice teaches us nothing. \carlisle{[Discuss the criticisms of Hagan 1997 and Wainer 1999 in sufficient detail.]}
-
-
-While the above suggests that there are a least a couple of situations in which the directional hypothesis test remains the best practice, researchers might consider moving beyond our suggestions in many other situations. 
 
 
 \subsection*{Conclusion}
