@@ -1,5 +1,5 @@
 # set working directory
-setwd("~/Dropbox/projects/meaningful-inferences/hks-replication")
+setwd("~/Dropbox/projects/meaningful-inferences/")
 
 # load packages
 library(MASS)
@@ -7,7 +7,7 @@ library(sandwich)
 library(compactr)
 
 # read data
-d <- read.csv("Data/HKS_AJPS_2013.tab", sep = "\t")
+d <- read.csv("hks-replication/Data/HKS_AJPS_2013.tab", sep = "\t")
 keep <- c("osvAll", "troopLag", "policeLag", "militaryobserversLag",
             "brv_AllLag", "osvAllLagDum", "incomp", "epduration", "lntpop",
           "conflict_id")
@@ -54,7 +54,7 @@ lines(trps, q[2, ], lwd = 3)
 lines(trps, q[1, ], lty = 3)
 lines(trps, q[3, ], lty = 3)
 
-pdf("~/Dropbox/projects/meaningful-inferences/doc/figs/hks-ci.pdf")
+pdf("doc/figs/hks-ci.pdf", height = 3.5, width = 5)
 par(mfrow = c(1,1), oma = c(0,0,0,0), mar = c(3,1,1,1))
 eplot(xlim = c(0, 150),
       ylim = c(.8, 4.7),
