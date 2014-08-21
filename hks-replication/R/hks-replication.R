@@ -54,6 +54,7 @@ lines(trps, q[2, ], lwd = 3)
 lines(trps, q[1, ], lty = 3)
 lines(trps, q[3, ], lty = 3)
 
+pdf("~/Dropbox/projects/meaningful-inferences/doc/figs/hks-ci.pdf")
 par(mfrow = c(1,1), oma = c(0,0,0,0), mar = c(3,1,1,1))
 eplot(xlim = c(0, 150),
       ylim = c(.8, 4.7),
@@ -68,3 +69,4 @@ for (i in 1:length(levels)) {
   lines(q[c(1,3)], c(i, i))
   text(q[2], i, names[i], pos = 3, cex = .7)
 }
+dev.off()
