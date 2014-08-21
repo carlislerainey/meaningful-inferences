@@ -315,11 +315,35 @@ Concretely, if the researcher predicts that an effect is positive and finds that
 
 \section*{Replication of Hultman, Kathman, and Shannon (2013)}
 
-To illustrate how our approach can be used by a researcher to explicitly test their substantive claims, we replicated Hultman, Kathman, and Shannon's (2013) assessment of civilian protection by UN peacekeeping operations (PKOs). Hultman, Kathman, and Shannon offer a theory that civilians can be successfully protected by UN PKOs when those missions are composed of military troops and police in adequately large numbers. They present their empirical results using the current practice of the sign-and-significance approach. Through our replication, we can re-evaluate their theory in a substantively meaningful way. 
+To illustrate how our approach can be used by a researcher to explicitly test their substantive claims, we replicated Hultman, Kathman, and Shannon's (2013) assessment of civilian protection by UN peacekeeping operations (PKOs). Hultman, Kathman, and Shannon offer a theory that civilians can be successfully protected by UN PKOs when those missions are composed of military troops and police in adequately large numbers. Following convention, these authors present their empirical results by (1) showing that the relevant quantity of interest is statistically significant and (2) arguing that the estimated effect is substantively meaningful.
 
 They argue that PKOs mitigate violence both on the battlefield and behind the battlefield's frontlines for a variety of reasons while the UN's ability to intervene is contingent upon the size and personnel composition of the deployment. To evaluate this argument, Hultman, Kathman, and Shannon hypothesize that as the UN commits both more military troops and more police personnel to a conflict, the amount of violence committed against civilians will decrease. Because their original hypothesis is directional, we can use two one-tailed tests, as detailed in the previous section, to check whether or not the 90\% confidence interval contains values that are consistent only with a hypothesis of a meaningful effect. 
 
-Following their use of a negative binomial model, we are able to replicate their results, calculate first-differences , and provide a substantively meaningful interpretation. As demonstrated in Figure \ref{fig:hks-ci}, Hultman, Kathman, and Shannon's theory holds and we can see that an expense of \$2 million, or roughly 2,000 troops, leads to approximately 70 civilian casualties prevented. Similarly, an expense of about \$8 million, or 8,000 troops, leads to the prevention of approximately 100 civilian casualties. As the authors discuss, these findings have important policy implications; having some substantively meaningful value, such as the necessary amount of dollars to prevent a particular amount of civilian casualties, gives their findings more weight. 
+Noting that the relevant coefficients are statistically significant and correctly signed, Hultman, Kathman, and Shannon write:
+
+\begin{quote}
+The negative and statistically significant ($p < 0.001$) effects of \textit{UN Military Troops} and \textit{UN Police} suggest that as PKOs are increasingly supplied with soldiers and police forces, violence against civilians in civil war decreases (p. 9-10)
+\end{quote}
+
+However, following the advice of the literature on interpreting the magnitude of the effects Hultman, Kathman, and Shannon present a plots of the expected civilian deaths as the number of military and policy troops varies. We replicate these plots in Figure ??.
+
+They write:
+
+\begin{quote}
+The figure shows that increasing the number of troops has a dramatic effect on improving the safety of noncombatants. With no troops deployed to a conflict, the expected number of civilians killed in a given month is approximately 106. When the number of UN military troops increases to 8,000, the expected value of civilian deaths declines to 1.79. Conditional on the other variables being held at the specified values, supplying only several thousand military troops nearly mutes violence completely as the number of troops approaches the upper values reported (p. 11)
+\end{quote}
+
+They argue that this reduction from an average of about 106 to about 2 is substantively important.
+
+\begin{quote}
+Bear in mind that the values presented are expected civilian deaths per month. These are not inconsequential reductions in violence. Indeed, given that the average length of a conflict in these data is nearly 65 months, deploying highly equipped missions can mitigate or wholly avert humanitarian disasters (p. 11).
+\end{quote}
+
+However, they do not explicitly take uncertainty into account when arguing for a meaningful effect. Instead, they only check that the estimate is substantively important. They do not consider whether all the plausible effects, given the data, are meaningful.
+
+Following their use of a negative binomial model, we replicate their results, calculate second-differences, and 90\% confidence intervals around the change in the expected civilian deaths as UN military troops increases. Figure \ref{fig:hks-ci} shows these confidence intervals. At an expense of \$2 million, or roughly 2,000 troops, leads to about 65 fewer civilian casualties, on average. However, the data strongly suggest that the effect leads to \textit{at least} 45 fewer civilian casualties and possibly as many as 95. Similarly, an expense of about \$8 million, or 8,000 troops, leads to the prevention of approximately 100 civilian casualties. However, effects small than about 70 fewer civilian deaths are inconsistent with these data and the effect might be as large as 140 fewer deaths. 
+
+In this case, the authors have strong evidence for a meaningful effect, even after uncertainty is taken into account. The authors are able to confidently reject trivial effect sizes because the confidence intervals contain only meaningful effects.
 
 %\begin{figure}[h]
 %\begin{center}
