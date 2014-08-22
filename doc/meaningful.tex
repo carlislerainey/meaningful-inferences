@@ -92,7 +92,7 @@
 
 \begin{center}
 {\LARGE Meaningful Inferences}\\\vspace{2mm}
-{\large The Importance of Explicit Statistical Arguments for Substantive Significance\symbolfootnote[1]{We thank [many people]. The analyses presented here were conducted with \texttt{R} 3.1.0 and Stata 13. All data and computer code necessary for replication are available at \href{https://github.com/carlislerainey/meaningful-inferences}{github.com/carlislerainey/meaningful-inferences}.}}\\\vspace{2mm}
+{\large The Importance of Explicit Statistical Arguments for Substantive Significance\symbolfootnote[1]{We thank [many people]. Thanks to Lisa Hultman, Jacob Kathman, and Megan Shannon and Cindy D. Kam and Elizabeth J. Zechmeister for making their data available to us. The analyses presented here were conducted with \texttt{R} 3.1.0 and Stata 13. All data and computer code necessary for replication are available at \href{https://github.com/carlislerainey/meaningful-inferences}{github.com/carlislerainey/meaningful-inferences}.}}\\\vspace{2mm}
 
 
 \vspace{10mm}
@@ -178,7 +178,7 @@ But ultimately, researchers want to move beyond the simple presentation of effec
 
 For example, Kinne (2013) presents effects that he deems as substantively large enough to be important. He hypothesizes that there are three discernible ways that states network and form bilateral agreements and determines whether or not these are both statistically and substantively significant through his empirical analysis. Kinne interprets the substantive meaning of his results as states being ``73\% more likely to propose an agreement" or cooperate when there is a third party involved than any other combination of states and bilateral agreements (pp. 778). By determining which effects are substantively meaningful, he is able to make the claim that his research makes a substantial contribution to the literature on international cooperation. His analysis ``puts endogenous influences in the spotlight, treating them not as methodological nuisances but as phenomena of substantive importance," and finds that typical much-cited cooperation influences ``diminish in substantive significance once network influences enter the equation," (pp. 781). 
 
-\section*{Practices in Reasoning About Effect Magnitude}
+\section*{Current Practices in Reasoning About Effect Magnitude}
 
 % Brief summary of the sign-and-significance approach
 Two current practices dominate the way that researchers make statistical arguments for substantive significance. We argue that both of these approaches are flawed and we offer a third, improved method. First, researchers might deem any statistically significant result as an important one. We refer to this as the ``sign-and-significance'' approach in which researchers simply note the sign of an effect and claim it is statistically significant. This approach  interprets the $p$-value as a measure of magnitude or importance.
@@ -277,15 +277,7 @@ It is important to apply similar standards of evidence to arguments for positive
 
 Researchers can make much more compelling and transparent arguments for meaningful effects by explicitly testing the claims we are making. For example, if  a researcher claims that an effect is positive and substantively meaningful, then the research hypothesis is not $H_r: \Delta > 0$. Instead, it's $H_r: \Delta > m$, where $m$ represents the researchers judgment about the smallest substantively interesting effect (or the largest substantively negligible effect). There is no need to jettison the entire hypothesis testing framework. In fact, the problems identified above can be addressed and the usual hypothesis testing framework can be kept intact if researchers are simply willing to apply their substantive judgment about which effects are and are not meaningful to their hypotheses rather than the estimated magnitude. 
 
-The current practice in political science for arguing for a meaningful effect proceeds as follows:
-
-\begin{enumerate}
-\item Hypothesize that an effect is positive (or negative).
-\item Test the hypothesis by computing a $p$-value. 
-\item If the null hypothesis can be rejected (i.e., $p < 0.05$), then claim support for the hypothesis and compute a substantively interpretable measure of the estimated effect size and make a substantive judgment about whether the estimate is substantively meaningful or not. If the null hypothesis cannot be rejected (i.e., $p < 0.05$), then note that the evidence is unclear and do not interpret the magnitude of the estimate.
-\end{enumerate}
-
-The alternative approach that we propose proceeds as follows:
+We propose the following procedure:
 
 \begin{enumerate}
 \item Hypothesize that the effect is positive and substantively meaningful (or negative and substantively meaningful).
@@ -298,10 +290,10 @@ The alternative approach that we propose proceeds as follows:
 The first step is easy, but important. In order to make compelling arguments for meaningful effects, researcher must clearly state their claims. Rather than simply hypothesizing that an effect is positive or negative, researcher must make their claim that a variable has a meaningful effect from the outset. For example, Levendusky and Horowitz (2012) hypothesize that ``bipartisan support in Congress for the president's policy should decrease audience costs.'' Notice that this hypothesizes a direction, but not a magnitude of the effect. Yet in discussing this hypothesis, Levendusky and Horowitz write: 
 
 \begin{quote}
-This type of unexpected (disconfirming) cue has an especially large effect on voters' decision-making processes (Baum and Groeling 2009; Eagly, Wood, and Chaiken 1978). In effect, it sends voters a strong signal that this is not a partisan decision, but rather a decision about what is best for the nation. Further, the fact that even the president's rivals supported his decision suggests to voters that the president did make the right call, which should lead all voters (regardless of partisan affiliation) to punish the president less harshly, thereby minimizing audience costs. [italics ours]
+This type of unexpected (disconfirming) cue has an \emph{especially large effect} on voters' decision-making processes. In effect, it sends voters a strong signal that this is not a partisan decision, but rather a decision about what is best for the nation. Further, the fact that even the president's rivals supported his decision suggests to voters that the president did make the right call, which should lead all voters (regardless of partisan affiliation) to punish the president less harshly, thereby minimizing audience costs (p. 326, italics ours).
 \end{quote}
 
-Thus, Levendusky and Horowitz carefully theorize about the magnitude of the effect, but only include the direction implied by the theory, and not the magnitude, into their hypothesis. They could improve the test of their theory by building the implication about the size of the effect directly into their hypothesis, predicting that ``bipartisan support in Congress for the president's policy should substantially decrease audience costs.'' I have simply added ``substantially'' to their hypothesis. This provides a strong indication to readers (and the researcher) that the theory implies the effect should be large and the researcher will provide a strong argument for a large negative effect, as opposed to simply a negative effect. 
+Thus, Levendusky and Horowitz carefully theorize about the magnitude of the effect, but offer a directional hypothesis. They could improve the test of their theory by building the implication about the size of the effect directly into their hypothesis, predicting that ``bipartisan support in Congress for the president's policy should \emph{substantially} decrease audience costs.'' We have simply added ``substantially'' to their hypothesis. This provides a strong indication to readers (and the researcher) that the theory implies the effect should be large and the researcher will provide a strong argument for a large negative effect, as opposed to simply a negative effect. 
 
 \subsection*{Choosing $m$}
 
@@ -331,7 +323,7 @@ Concretely, if the researcher predicts that an effect is positive and finds that
 
 To illustrate how our approach can be used by a researcher to explicitly test their substantive claims, we replicated Hultman, Kathman, and Shannon's (2013) assessment of civilian protection by UN peacekeeping operations (PKOs). Hultman, Kathman, and Shannon offer a theory that civilians can be successfully protected by UN PKOs when those missions are composed of military troops and police in adequately large numbers. Following convention, these authors present their empirical results by (1) showing that the relevant quantity of interest is statistically significant and (2) arguing that the estimated effect is substantively meaningful.
 
-They argue that PKOs mitigate violence both on the battlefield and behind the battlefield's frontlines for a variety of reasons while the UN's ability to intervene is contingent upon the size and personnel composition of the deployment. To evaluate this argument, Hultman, Kathman, and Shannon hypothesize that as the UN commits both more military troops and more police personnel to a conflict, the amount of violence committed against civilians will decrease. Because their original hypothesis is directional, we can use two one-tailed tests, as detailed in the previous section, to check whether or not the 90\% confidence interval contains values that are consistent only with a hypothesis of a meaningful effect. 
+They argue that PKOs mitigate violence both on the battlefield and behind the battlefield's frontlines for a variety of reasons while the UN's ability to intervene is contingent upon the size and personnel composition of the deployment. To evaluate this argument, Hultman, Kathman, and Shannon hypothesize that as the UN commits both more military troops to a conflict, the amount of violence committed against civilians will decrease.
 
 Noting that the relevant coefficients are statistically significant and correctly signed, Hultman, Kathman, and Shannon write:
 
@@ -339,25 +331,32 @@ Noting that the relevant coefficients are statistically significant and correctl
 The negative and statistically significant ($p < 0.001$) effects of \textit{UN Military Troops} and \textit{UN Police} suggest that as PKOs are increasingly supplied with soldiers and police forces, violence against civilians in civil war decreases (p. 9-10)
 \end{quote}
 
-However, following the advice of the literature on interpreting the magnitude of the effects Hultman, Kathman, and Shannon present a plots of the expected civilian deaths as the number of military and policy troops varies. We replicate these plots in Figure ??.
+However, following the advice of the literature on interpreting the magnitude of the effects Hultman, Kathman, and Shannon present a plots of the expected civilian deaths as the number of military and policy troops varies. We replicate these plots in Figure \ref{fig:hks-ev}.
 
-They write:
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .8]{figs/hks-ev.pdf}
+\caption{This figure shows expected number of civilian casualties as the number of U.N. troops increases.}\label{fig:hks-ci}
+\end{center}
+\end{figure}
+
+Hultman, Kathman, and Shannon argue that effect is not only statistically significant, but substantively important.:
 
 \begin{quote}
-The figure shows that increasing the number of troops has a dramatic effect on improving the safety of noncombatants. With no troops deployed to a conflict, the expected number of civilians killed in a given month is approximately 106. When the number of UN military troops increases to 8,000, the expected value of civilian deaths declines to 1.79. Conditional on the other variables being held at the specified values, supplying only several thousand military troops nearly mutes violence completely as the number of troops approaches the upper values reported (p. 11)
+The figure shows that increasing the number of troops has a dramatic effect on improving the safety of noncombatants. With no troops deployed to a conflict, the expected number of civilians killed in a given month is approximately 106. When the number of UN military troops increases to 8,000, the expected value of civilian deaths declines to 1.79. Conditional on the other variables being held at the specified values, supplying only several thousand military troops \emph{nearly mutes} violence completely as the number of troops approaches the upper values reported (p. 11, italics ours)
 \end{quote}
 
-They argue that this reduction from an average of about 106 to about 2 is substantively important.
+They continue:
 
 \begin{quote}
-Bear in mind that the values presented are expected civilian deaths per month. These are not inconsequential reductions in violence. Indeed, given that the average length of a conflict in these data is nearly 65 months, deploying highly equipped missions can mitigate or wholly avert humanitarian disasters (p. 11).
+Bear in mind that the values presented are expected civilian deaths per month. These are \emph{not inconsequential} reductions in violence. Indeed, given that the average length of a conflict in these data is nearly 65 months, deploying highly equipped missions can \emph{mitigate or wholly avert humanitarian disasters} (p. 11, italics ours).
 \end{quote}
 
-However, they do not explicitly take uncertainty into account when arguing for a meaningful effect. Instead, they only check that the estimate is substantively important. They do not consider whether all the plausible effects, given the data, are meaningful.
+However, they do not explicitly take uncertainty into account when arguing for a meaningful effect. Instead, they only check that the \emph{estimate} is substantively important. They do not consider whether trivial effects are also plausible based on the data.
 
-Following their use of a negative binomial model, we replicate their results, calculate first-differences, and 90\% confidence intervals around the change in the expected civilian deaths as UN military troops increases. Figure \ref{fig:hks-ci} shows these confidence intervals. At an expense of \$2 million, or roughly 2,000 troops, leads to about 65 fewer civilian casualties, on average. However, the data strongly suggest that the effect leads to \textit{at least} 45 fewer civilian casualties and possibly as many as 95. Similarly, an expense of about \$8 million, or 8,000 troops, leads to the prevention of approximately 100 civilian casualties. However, effects small than about 70 fewer civilian deaths are inconsistent with these data and the effect might be as large as 140 fewer deaths. 
+To assess whether their claim is robust to accounting for the uncertainty, we replicate their results and calculate first-differences and 90\% confidence intervals around the change in the expected civilian deaths as UN military troops increases. Figure \ref{fig:hks-ci} shows these confidence intervals. At an expense of roughly \$2 million, 2,000 troops leads to about 65 fewer civilian casualties, on average. However, the data strongly suggest that the effect leads to \textit{at least} 45 fewer civilian casualties and possibly as many as 95. Similarly, an expense of about \$8 million, or 8,000 troops, leads to the prevention of approximately 100 civilian casualties. However, we can be confidence that 8,000 troops prevents at least 70 civilian deaths and perhaps as many as 140. 
 
-In this case, the authors have strong evidence for a meaningful effect, even after uncertainty is taken into account. The authors are able to confidently reject trivial effect sizes because the confidence intervals contain only meaningful effects.
+In this case, the authors have strong evidence for a meaningful effect, even after uncertainty is taken into account. These data suggest that the effect of U.N. troops is not trivial.
 
 \begin{figure}[H]
 \begin{center}
@@ -368,10 +367,20 @@ In this case, the authors have strong evidence for a meaningful effect, even aft
 
 \section*{Replication of Kam and Zechmeister (2013)}
 
-Kam and Zechmeister (2013) argue that candidate name recognition by directly, by increasing candidates approval, and indirectly, by informing voters about the candidate's viability. The authors present three lab experiments to demonstrate the cause link between their concepts of interest, but they use a field experiment to boost the external validity of the laboratory results. Through a clever design exploiting routes that parent must use to drop their kids off at school, Kam and Zechmeister expose half of parents in a particular geographic region to four yard signs displaying a fictitious candidate Ben Griffin's name. The other half of parents are not exposed and serve as a control group. The authors then surveyed the parents and asked them to indicate their top three choices for city council seats by choosing among five actual candidates and two fictional candidates (one whose name appeared on yard signs and a second, placebo, whose name did not appear on any signs). The authors summarize their results:
+Kam and Zechmeister (2013) argue that name recognition increases a candidate's support directly, by increasing the candidate's approval, and indirectly, by informing voters about the candidate's viability. The authors present three lab experiments to demonstrate the causal link between their concepts of interest, but they use a field experiment to boost the external validity of the laboratory results. 
+
+Through a clever design exploiting routes that parent must use to drop their kids off at school, Kam and Zechmeister expose half of parents in a particular geographic region to four yard signs displaying fictitious candidate Ben Griffin's name. The other half of parents are not exposed to any name and serve as a control group. The authors then surveyed the parents and asked them to indicate their top three choices for city council seats by choosing among five actual candidates and two fictional candidates (Ben Griffin, whose name appeared on yard signs and Milt Jenkins, whose name did not appear on any signs and who serves as a placebo). 
+
+The authors summarize their results:
 
 \begin{quote}
 Did recognition spurred on by political yard signs increase support for Ben Griffin in the treatment group? To determine if this is so, we examine the extent to which survey respondents selected Ben Griffin as one of their top three choices for council. As shown in [their] Table 3, in the control condition, only 13.9\% of respondents placed Ben Griffin among their top three choices, but in the treatment condition, 23.9\% of respondents placed Ben Griffin among their top three choices. This 10 percentage point difference is sizable given the modesty of the treatment. In light of the small sample size, it is statistically significant at generous levels ($p \approx 0.13$, one-tailed).
+\end{quote}
+
+They continue:
+
+\begin{quote}
+we can examine the rates of selection of the two fictitious names, within each condition. Among the treated subjects, 23.9\% of subjects placed Ben Griffin in the top three set, but only 13.0\% placed Milt Jenkins in the top three set, a statistically significant difference at p < 0.09, one-tailed. Among the control subjects, 13.9\% placed Ben Griffin in the top three set, and the identical percentage, 13.9\%, placed Milt Jenkins in the top three set. The results from this field study lend generalizability to the claim established in our laboratory studies: name recognition increases candidate support in low- information elections.
 \end{quote}
 
 But can we be confident that this effect is indeed ``sizable''? Are small effects plausible given the data? Figure \ref{fig:kz-ci} shows the estimated effects and 90\% confidence intervals. Notice that while the estimated effects are of borderline statistical significance, the estimated effects of about 10 percentage points are quite large. However, much smaller effects are plausible as well. Indeed, the authors cannot even reject the tiniest of effects with these data. While the estimated effects are ``large and significant,'' these data do not offer compelling evidence for a substantively meaningful effect.

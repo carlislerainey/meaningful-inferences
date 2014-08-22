@@ -42,6 +42,7 @@ X <- cbind(1,
 ev.sims <- exp(X%*%t(sims))
 q <- apply(ev.sims, 1, quantile, c(.05, .5, .95))
 
+pdf("doc/figs/hks-ev.pdf", height = 3.5, width = 5)
 par(mfrow = c(1,1), oma = c(0,0,0,0), mar = c(3,3.5,1,1))
 eplot(xlim = c(0, 8),
       ylim = mm(q),
@@ -53,6 +54,7 @@ eplot(xlim = c(0, 8),
 lines(trps, q[2, ], lwd = 3)
 lines(trps, q[1, ], lty = 3)
 lines(trps, q[3, ], lty = 3)
+dev.off()
 
 pdf("doc/figs/hks-ci.pdf", height = 3.5, width = 5)
 par(mfrow = c(1,1), oma = c(0,0,0,0), mar = c(3,1,1,1))
