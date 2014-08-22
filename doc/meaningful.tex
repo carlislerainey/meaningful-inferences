@@ -178,32 +178,76 @@ But ultimately, researchers want to move beyond the simple presentation of effec
 
 For example, Kinne (2013) presents effects that he deems as substantively large enough to be important. He hypothesizes that there are three discernible ways that states network and form bilateral agreements and determines whether or not these are both statistically and substantively significant through his empirical analysis. Kinne interprets the substantive meaning of his results as states being ``73\% more likely to propose an agreement" or cooperate when there is a third party involved than any other combination of states and bilateral agreements (pp. 778). By determining which effects are substantively meaningful, he is able to make the claim that his research makes a substantial contribution to the literature on international cooperation. His analysis ``puts endogenous influences in the spotlight, treating them not as methodological nuisances but as phenomena of substantive importance," and finds that typical much-cited cooperation influences ``diminish in substantive significance once network influences enter the equation," (pp. 781). 
 
-\section*{Two Flawed Practices in Reasoning About Effect Magnitude}
+\section*{Practices in Reasoning About Effect Magnitude}
 
-Two current practices dominate the way that researchers make statistical arguments for substantive significance. First, researchers might deem any statistically significant result as an important one. We refer to this as the ``sign-and-significance'' approach in which researchers simply note the sign of an effect and claim it is statistically significant. This approach is much maligned (e.g., Cohen 1990 and Gill 1999) and interprets the $p$-value as a measure of magnitude or importance.
+% Brief summary of the sign-and-significance approach
+Two current practices dominate the way that researchers make statistical arguments for substantive significance. We argue that both of these approaches are flawed and we offer a third, improved method. First, researchers might deem any statistically significant result as an important one. We refer to this as the ``sign-and-significance'' approach in which researchers simply note the sign of an effect and claim it is statistically significant. This approach  interprets the $p$-value as a measure of magnitude or importance.
 
-The second practice, which is more common in political science, is to interpret the magnitude without explicitly accounting for the uncertainty of the estimate. We refer to this as the ``magnitude-and-significance'' approach in which researchers first check that an effect is statistically significant and then interprets the magnitude of the estimate. While the magnitude-and-significance approach is no doubt and improvement on the sign-and-significance approach, it retains many of its flaws
+% Brief summary of the magnitude-and-significance approach
+The second practice, which is more common in political science, is to interpret the magnitude without explicitly accounting for the uncertainty of the estimate. We refer to this as the ``magnitude-and-significance'' approach in which researchers first check that an effect is statistically significant and then interprets the magnitude of the estimate. While the magnitude-and-significance approach is no doubt and improvement on the sign-and-significance approach, it retains many of its flaws.
 
-\subsection*{The Error of Sign-and Significance: Small $p$-Values Do Not Indicate Large Effects}
+% Brief summary of the explicit-test approach
+As an alternative, we suggest the explicit-test approach. To explicitly test a hypothesis of a meaningful effect, researchers simply use their substantive judgement to partition the set of possible effects into meaningful effects and trivial effects. They then conduct a formal hypothesis test that the true effect lies about the smallest substantively meaningful effect. This approach address the flaws of both the sign-and-significance and magnitude and significance approaches.
 
-A $p$-value is simply the probability of observing data at least as extreme as the observed data if the null hypothesis were true (e.g., Casella and Berger 2002 and DeGroot and Schervish 2002). All else equal, the $p$-value gets smaller as the effect size under investigation increases, but the $p$-value is also a function of the sample size (Gill 1999). While it is common to describe estimates as ``highly significant'' or ``very significant,'' this implies (or tempts readers to conclude) that an effect is large or important. However, a minuscule $p$-value does not imply a large or important effect. ``Very significant'' (e.g., $p < 0.001$) might simply mean that the researcher has a large sample. Even if the researcher finds statistically significant results with a small sample, the small $p$-value only indicates that the effect size is large relative to the uncertainty. It says nothing about the size of the estimate relative to some standard of substantive importance. With a very small $p$-value (e.g., $p < 0.001$), substantive experts might judge the effect to be large, moderate, small, or even negligible. Experts might call some of these effect important, somewhat important, slightly important, or not at all important. The $p$-value is indirectly related to substantive significance at best. This disconnect occurs for two reasons. First, the $p$-value is only partly determined by the effect size--sample size plays a large part as well. Second, the absolute magnitude of the effect cannot be deemed substantively large, small, or negligible without the judgment of a substantive expert.
+\subsection*{Sign-and-Significance}
 
-\subsection*{Current Practice Does Not Account for Uncertainty}
+% Overview of the SS approach
+Using the sign-and-significance approach, researchers declare an effect important if and only if the effect is statistically significant. That is, researchers simply test whether the effect is greater than (or less than) zero. If the they reject the null (e.g., $p < 0.05$), then they declare the effect to be substantively meaningful.
 
-The standard scientific practice in political science computes substantively interpretable estimates of effects and (1) determines whether these estimates are statistically significant and, if so, (2) makes a judgement about whether the magnitude is substantively important. \kelly{[We need to add a cite here, but perhaps several examples will do. I'm confidence that this is the way it is done in practice, but we need to either point to a source that suggests the practice or illustrate with several examples that the practice is quite common.]} This two step procedure has three unfortunate consequences. This tempts researchers to...
+% The problems with the SS approach
+The much maligned (e.g., Cohen 1990 and Gill 1999) sign-and-significance approach emphasizes $p$-values, but a minuscule $p$-value does not imply a large or important effect. The $p$-value depends on both the sample size and the effect size. It is true that the $p$-value gets smaller as the effect size under investigation increases. However, the $p$-value also decreases the sample size, which is unrelated to the effect size, increases. While it is common to describe estimates as ``highly significant'' or ``very significant,'' this implies (or tempts readers to conclude) that an effect is large or important. ``Very significant'' (e.g., $p < 0.001$) might simply mean that the researcher has a large sample. Even if the researcher finds statistically significant results with a small sample, the small $p$-value only indicates that the effect size is large relative to the uncertainty. It says nothing about the size of the estimate relative to some standard of substantive importance. With a very small $p$-value (e.g., $p < 0.001$), substantive experts might judge the effect to be large, moderate, small, or even negligible. Experts might call some of these effect important, somewhat important, slightly important, or not at all important. The $p$-value is indirectly related to substantive significance at best.
+
+\subsection*{Magnitude-and-Significance}
+
+% Overview of the MS approach
+The standard scientific practice in political science is to take the magnitude-and-significance approach. 
 
 \begin{enumerate}
-\item treat all results that are not statistically significant similarly, drawing no distinction between large, imprecise estimates and small, precise estimates (see Rainey 2014).
-\item treat all statistically significant and substantively large estimates similarly, drawing no distinction between large, imprecise estimates and large, precise estimates.
-\item treat ``barely significant,'' large estimates and ``almost significant,'' large estimates quite differently, drawing a strong distinction between two similar estimates with similar uncertainty.
+\item Computes substantively interpretable estimate of the effect of interest, such as a first difference.
+\item Test whether these estimates are statistically significant.
+\item If so, make a judgement about whether the magnitude is substantively important.
 \end{enumerate}
 
-Consider, for example the hypothetical studies presented in Figure \ref{fig:example-cis}. If we considered 0.25 the minimal substantively meaningful effect, then only one study, Study A, seems to offer evidence for a substantively meaningful effect. Yet the current practice would also suggest that Study B offers evidence for a substantively meaningful effect as well. And while a large, meaningful effect is certainly plausible based on Study B, it fails to rule out small, negligible effects. In fact, the amount of evidence offers for the hypothesis of a meaningful effect by Study B is similar to that offered by Study C--neither study rules our small, negligible effects. Yet these studies are treated quite differently by the current practice in political science. In fact, the only improvement of the current practice over the sign-and-significance method is that the current practice managed to distinguish between Study D and Study A.
+For example, Tomz and Weeks (2013) discuss the results of their experiment on attitudes about conflict.
+
+\begin{quote}
+Citizens in both countries were much less willing to attack another democracy than to attack an otherwise equivalent autocracy. Approximately 34.2\% of respondents in the U.K. supported a military strike when the country was not a democracy versus 20.9\% when the country was a democracy. Thus, democracy reduced support for a military strike by more than 13 percentage points, with a 95\% confidence interval of ?19.6 to ?6.9. The baseline level of militarism was much higher in the United States, where at least half the respondents wanted to strike an autocracy. Nonetheless, democracy exerted a similarly large effect in the United States: The between-subjects and within-subject estimates concurred that democracy reduced enthusiasm for a military strike by about 11.5 percentage points. \emph{In both countries, democracy produced substantively large and statistically significant effects on preferences} (p. 854-855, italics ours).
+\end{quote}
+
+Gerber and Hopkins (2011) discuss their regression model.
+
+\begin{quote}
+The first model indicates that all else equal, a city where the Democrat just wins the mayoralty should expect its spending on police to drop by 2.3 percentage points three fiscal years later. This result is \emph{statistically significant}, with a 95\% confidence interval that runs from 0.5 percentage points to 4.0 percentage points. \emph{It is substantively large as well, as it reflects a spending shift of 1.2 standard deviations in terms of the dependent variable} (p. 333, italics ours).
+\end{quote}
+
+Ansolabehere and Jones (2010) discuss their coefficients of their regression model.
+
+\begin{quote}
+The regression results in [their] Table 3 show that a Representative?s actual roll-call votes strongly predict respondents? beliefs about the Representative?s votes. The coefficients for both 2005 and 2006 are \emph{substantively large (approximately .3) and statistically significant} (p. 588, italics ours). 
+\end{quote}
+
+The magnitude-and-significance approach has three unfortunate consequences. It tempts researchers to...
+
+\begin{enumerate}
+\item treat all statistically significant and substantively large estimates similarly, drawing no distinction between large, imprecise estimates and large, precise estimates.
+\item treat ``barely significant,'' large estimates and ``almost significant,'' large estimates quite differently, drawing a strong distinction between two similar estimates with similar uncertainty.
+\item treat all results that are not statistically significant similarly, drawing no distinction between large, imprecise estimates and small, precise estimates (see Rainey 2014).
+\end{enumerate}
+
+Consider, for example the hypothetical studies presented in Figure \ref{fig:example-cis}. If we are interested in substantive significance and consider 0.25 as the minimal substantively meaningful effect, then only one study, Study A, seems to offer evidence for a substantively meaningful effect. After that, Studies B and C offer ambiguous evidence for a meaningful effect and Studies D and E offer evidence \emph{against} a meaningful effect.
+
+Although only Study A offers compelling evidence for a meaningful effect, the magnitude-and-significance approach suggests that Studies A and B offer similar evidence for a substantively meaningful effect as well, since both are ``statistically significant and substantively large.''  Yet these studies do not offer similar evidence for a meaningful effect. Study A is only consistent with a meaningful effect. And while a large, meaningful effect is certainly plausible based on Study B, it fails to rule out small, negligible effects.
+
+Instead, the amount of evidence for a meaningful effect offered by Study B is similar to that offered by Study C--both studies are consistent with both large and small effects. Yet the magnitude-and-significance approach treats these studies \emph{differently}. The magnitude-and-significance approach concludes that the effect is ``positive, significant, and substantively meaningful'' from Study B and ``not statistically significant'' from Study C.
+
+The magnitude-and-significance approach also treats Studies C and E similarly because both estimates are ``not statistically significant.'' However, Study C is consistent with both large, meaningful effect and small, negligible effects. Study E on the other hand, is only consistent with small, negligible effects.
+
+In fact, the only improvement of the magnitude-and-significance over the much maligned sign-and-significance approach is that the current practice managed to distinguish between Study A and Study D. Other than that, both of these approaches treat Study A and B similarly, Studies B and C differently, and Studies C and E similarly. From our perspective, these are all inferential errors. Table \ref{tab:example-cis} shows the interpretation from each approach compared with an ``intuitive approach'' based on the confidence intervals. Especially notice the similar errors made by the dismissed sign-and-significance approach and the current practice of magnitude-and-significance.
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale = .6]{figs/example-cis.pdf}
-\caption{This figure provides several hypothetical studies to illustrate several points about arguments for substantive significance. Notice that Studies D and E produce similar results and Studies B and C produce similar estimates. If we take 0.25 as a the smallest substantively meaningful effect, then only Study A offers compelling evidence for a meaningful effect. Unfortunately, the current practice treats Studies A and B (and perhaps D) as similar evidence for a meaningful effect. See Table \ref{tab:example-cis} for the typical interpretations.}\label{fig:example-cis}
+\includegraphics[scale = .8]{figs/example-cis.pdf}
+\caption{This figure provides several hypothetical studies to illustrate several points about arguments for substantive significance. Notice that Study A offers compelling evidence for a meaningful effect, Studies B and C are consistent with both small and large effects, and Studies D and E offer evidence \emph{against} meaningful effects. However, the current practice in political science of magnitude and significance treats Studies A and B similarly, Studies B and C \emph{differently}, and Studies C and E similarly. Table \ref{tab:example-cis} for the interpretations from both the sign-and-significance and magnitude-and-significance approaches with the intuitive meaning.}\label{fig:example-cis}
 \end{center}
 \end{figure}
 
@@ -222,12 +266,12 @@ Study C & ``not statistically significant'' & ``not statistically significant'' 
 Study D & ``positive and significant'' & ``positive and significant, but substantively small' & ``We have strong evidence against a substantively meaningful effect.''\\
 Study E & ``not statistically significant'' & ``not statistically significant'' & ``We have strong evidence against a substantively meaningful effect.''\\
 \hline
-\end{tabular}\caption{This table provides the typical interpretations of the results in Figure \ref{fig:example-cis} using the two common methods. Notice that the sign-and-significance methods and the current practice only manage to distinguish the evidence from Studies D and E. The current practice treats Studies A and B similarly and Studies C and E similarly. However, these studies offer vastly different amounts of evidence for or against an hypothesis of a meaningful effect.}\label{tab:example-cis}
+\end{tabular}\caption{This table compares the interpretations of the results in Figure \ref{fig:example-cis} using the sign-and-significance and the magnitude-and-significance approaches to the intuitive meaning of the confidence intervals. Notice that the much maligned sign-and-significance approach and the magnitude-and-significant approach only differ in their interpretations of Studies D and E. Both approaches deviate substantially from the intuitive interpretation based on the confidence intervals.}\label{tab:example-cis}
 \end{scriptsize}
 \end{center}
 \end{table}
 
-The key takeaway point is that it is important to apply similar standards of evidence to arguments for positive (or negative) effects and arguments for meaningfully positive (or meaningfully negative) effects. The usual logic of hypothesis testing requires that the researcher only declare that an effect is positive if and only if the evidence points overwhelming against negative effects. Similarly, researchers should not declare a positive estimate substantively meaningful simply because it is inconsistent with with negative effects and above some threshold. A better standard of evidence would require that researchers declare an effect meaningful if and only if it is inconsistent with negligible effects.
+It is important to apply similar standards of evidence to arguments for positive (or negative) effects and arguments for \emph{meaningfully} positive (or negative) effects. The usual logic of hypothesis testing requires that the researcher only declare that an effect is positive if and only if the evidence points overwhelming against negative effects. Similarly, researchers should not declare a positive estimate substantively meaningful simply because it is inconsistent with with negative effects and the point estimate lies above some threshold. A better standard of evidence would require that researchers declare an effect meaningful if and only if it is inconsistent with negligible effects.
 
 \section*{A Compelling Argument for a Meaningful Effect}
 
