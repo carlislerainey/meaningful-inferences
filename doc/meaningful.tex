@@ -15,7 +15,7 @@
 \usepackage{longtable}
 \usepackage{microtype}
 \usepackage{graphicx}
-\usepackage{hyperref}
+%\usepackage{hyperref}
 %\usepackage[usenames,dvipsnames]{color}
 \usepackage{url}
 \usepackage{natbib}
@@ -75,17 +75,17 @@
 \usepackage{color}
 \definecolor{darkred}{RGB}{100,0,0}
 
-\hypersetup{
- pdftitle={Meaningful Inferences}, % title
- pdfauthor={Kelly McCaskey and Carlisle Rainey}, % author
- pdfkeywords={hypothesis testing} {confidence intervals} {substantive significance}
- pdfnewwindow=true, % links in new window
- colorlinks=true, % false: boxed links; true: colored links
- linkcolor=darkred, % color of internal links
- citecolor=darkred, % color of links to bibliography
- filecolor=darkred, % color of file links
- urlcolor=darkred % color of external links
-}
+%\hypersetup{
+% pdftitle={Meaningful Inferences}, % title
+% pdfauthor={Kelly McCaskey and Carlisle Rainey}, % author
+% pdfkeywords={hypothesis testing} {confidence intervals} {substantive significance}
+% pdfnewwindow=true, % links in new window
+% colorlinks=true, % false: boxed links; true: colored links
+% linkcolor=darkred, % color of internal links
+% citecolor=darkred, % color of links to bibliography
+% filecolor=darkred, % color of file links
+% urlcolor=darkred % color of external links
+%}
 
 % enable comments in pdf
 \newcommand{\kelly}[1]{\textcolor{blue}{#1}}
@@ -96,16 +96,22 @@
 
 \begin{center}
 {\LARGE Meaningful Inferences}\\\vspace{2mm}
-{\large The Importance of Explicit Statistical Arguments for Substantive Significance\symbolfootnote[1]{We thank Lisa Hultman, Jacob Kathman, and Megan Shannon and Cindy Kam and Elizabeth Zechmeister for making their data available to us. The analyses presented here were conducted with \texttt{R} 3.1.0. All data and computer code necessary for replication are available at \href{https://github.com/carlislerainey/meaningful-inferences}{github.com/carlislerainey/meaningful-inferences}.}}\\\vspace{2mm}
+{\large The Importance of Explicit Statistical Arguments for Substantive Significance\symbolfootnote[1]{We thank Lisa Hultman, Jacob Kathman, and Megan Shannon and Cindy Kam and Elizabeth Zechmeister for making their data available to us. The analyses presented here were conducted with \texttt{R} 3.1.0. All data and computer code necessary for replication are available at %\href{https://github.com/carlislerainey/meaningful-inferences}{
+github.com/carlislerainey/meaningful-inferences%}
+.}}\\\vspace{2mm}
 
 
 \vspace{10mm}
 
-Kelly McCaskey\symbolfootnote[2]{Kelly McCaskey is a Ph.D. student in the Department of Political Science, University at Buffalo, SUNY, 520 Park Hall, Buffalo, NY 14260 (\href{mailto:kellymcc@buffalo.edu}{kellymcc@buffalo.edu}).}
+Kelly McCaskey\symbolfootnote[2]{Kelly McCaskey is a Ph.D. student in the Department of Political Science, University at Buffalo, SUNY, 520 Park Hall, Buffalo, NY 14260 (%\href{mailto:kellymcc@buffalo.edu}{
+kellymcc@buffalo.edu%}
+).}
 
 \vspace{3mm}
 
-Carlisle Rainey\symbolfootnote[3]{Carlisle Rainey is Assistant Professor of Political Science, University at Buffalo, SUNY, 520 Park Hall, Buffalo, NY 14260 (\href{mailto:rcrainey@buffalo.edu}{rcrainey@buffalo.edu}).}
+Carlisle Rainey\symbolfootnote[3]{Carlisle Rainey is Assistant Professor of Political Science, University at Buffalo, SUNY, 520 Park Hall, Buffalo, NY 14260 (%\href{mailto:rcrainey@buffalo.edu}{
+rcrainey@buffalo.edu%}
+).}
 \end{center}
 
 \vspace{10mm}
@@ -163,10 +169,10 @@ Most empirical research in political science focuses on estimating the effect $\
 \subsection*{Direction}
 
 % Orient the reader to the direction question
-The first question that empirical research usually attempts to answer is the direction of the effect. Is the effect positive or negative?\footnote{Some research argues theoretically and empirically for ``no effect'' or ``a negligible effect'' (e.g., \citealt{KamPalmer2008}, see \citealt{Rainey2014}), but most hypotheses posit the direction of an effect.} 
+The first question that empirical research usually attempts to answer is the direction of the effect. Is the effect positive or negative?\footnote{\baselineskip=2\normalbaselineskip Some research argues theoretically and empirically for ``no effect'' or ``a negligible effect'' (e.g., \citealt{KamPalmer2008}, see \citealt{Rainey2014}), but most hypotheses posit the direction of an effect.\\} 
 
 % Provide the details of the direction question
-Suppose, for clarity, that the researcher offers a directional research hypothesis, suggesting that an effect of interest $\Delta$ is positive. Formally, we might denote this hypothesis as $H_r: \Delta > 0$. Then the researcher compares this research hypothesis to a null hypothesis that suggests that the research hypothesis is false, or equivalently, that the effect lies outside the region suggested by the research hypothesis. Formally, we might write this as $H_0: \Delta \leq 0$. To assess the evidence against the null hypothesis, the researcher usually calculates a $p$-value, which is the probability of obtaining (hypothetical) data at least as extreme as the observed data if the null hypothesis were true. If this $p$-value is sufficiently small (by convention, less than 0.05), then the researcher rejects the null hypothesis in favor of the research hypothesis. In our example, the researcher would reject negative effects and conclude that the effect is positive. However, if the $p$-value is not sufficiently small, then the researcher declares that the data do not offer compelling evidence against the null and notes that the direction of the effect remains uncertain.\footnote{However, some research takes a $p$-value greater than 0.05 as evidence \textit{in favor of} the null hypothesis \citep{Rainey2014}. We prefer to interpret a lack of statistical significance as ambiguous evidence from which the researcher can make no claim (i.e., the effect might be negative or positive).}
+Suppose, for clarity, that the researcher offers a directional research hypothesis, suggesting that an effect of interest $\Delta$ is positive. Formally, we might denote this hypothesis as $H_r: \Delta > 0$. Then the researcher compares this research hypothesis to a null hypothesis that suggests that the research hypothesis is false, or equivalently, that the effect lies outside the region suggested by the research hypothesis. Formally, we might write this as $H_0: \Delta \leq 0$. To assess the evidence against the null hypothesis, the researcher usually calculates a $p$-value, which is the probability of obtaining (hypothetical) data at least as extreme as the observed data if the null hypothesis were true. If this $p$-value is sufficiently small (by convention, less than 0.05), then the researcher rejects the null hypothesis in favor of the research hypothesis. In our example, the researcher would reject negative effects and conclude that the effect is positive. However, if the $p$-value is not sufficiently small, then the researcher declares that the data do not offer compelling evidence against the null and notes that the direction of the effect remains uncertain.\footnote{\baselineskip=2\normalbaselineskip However, some research takes a $p$-value greater than 0.05 as evidence \textit{in favor of} the null hypothesis \citep{Rainey2014}. We prefer to interpret a lack of statistical significance as ambiguous evidence from which the researcher can make no claim (i.e., the effect might be negative or positive).}
 
 % Three things to note about arguments for direction.
 There are three features of arguments for direction to make note of. First, this style of argumentation is ubiquitous in political science. It is extremely rare to find empirical research in political science that does not perform a hypothesis test of some sort. Each empirical study published in the \textit{APSR} and \textit{AJPS} from 2011 to 2013 performs some type of hypothesis test. Second, this approach is compelling not because it argues that the observed data are consistent with the researcher's claim, but because the data are inconsistent with other claims. Third, this argument for the direction of the effect explicitly accounts for the uncertainty of the estimated effect. If the uncertainty is large relative to the magnitude of the estimate then the researcher cannot (and usually does not) make confident claims about the direction of the effect of interest. However, if the uncertainty is small relative to the size of the estimated effect, then the researcher can draw confident conclusions about the direction of the effect. 
@@ -351,7 +357,7 @@ This type of unexpected (disconfirming) cue has an \emph{especially large effect
 In order to make a compelling argument that an effect is substantively meaningful, the researcher must carefully define exactly which effects are and are not substantively meaningful. To do this, researchers simply choose an $m$ such that effects smaller than $m$ are considered substantively negligible and effects larger than $m$ are considered substantively meaningful. The cut point $m$ partitions the possible effects into those that are substantively meaningful and those that are substantively negligible.
 
 % We must insist on subjectivity.
-As \cite{Rainey2014} notes, political scientists should not insist on hard and fast rules for judging the effects that are and are not substantively meaningful.\footnote{We should note, though, that such rules of thumb have been presented, see \cite{Glass1976} and \cite{Cohen1992}, but these rules are usually proposed with caution.} Instead, we must insist that substantive scholars making substantive claims about politics also make substantive judgments about the importance of their effects. \citet[pp. 82-83]{Thompson2001} notes for example, that ``if people interpreted effect sizes with the same rigidity that $\alpha = 0.05$ has been used in statistical testing, we would merely be being stupid in another metric.'' \cite{Kirk1996} notes that this judgment is ``influenced by a variety of factors, including the researcher's value system, societal concerns, assessment of costs and benefits, and so on.'' Despite this element of subjectivity, \citet[p. 30]{Thompson2002} writes: 
+As \cite{Rainey2014} notes, political scientists should not insist on hard and fast rules for judging the effects that are and are not substantively meaningful.\footnote{\baselineskip=2\normalbaselineskip We should note, though, that such rules of thumb have been presented, see \cite{Glass1976} and \cite{Cohen1992}, but these rules are usually proposed with caution.} Instead, we must insist that substantive scholars making substantive claims about politics also make substantive judgments about the importance of their effects. \citet[pp. 82-83]{Thompson2001} notes for example, that ``if people interpreted effect sizes with the same rigidity that $\alpha = 0.05$ has been used in statistical testing, we would merely be being stupid in another metric.'' \cite{Kirk1996} notes that this judgment is ``influenced by a variety of factors, including the researcher's value system, societal concerns, assessment of costs and benefits, and so on.'' Despite this element of subjectivity, \citet[p. 30]{Thompson2002} writes: 
 
 \begin{quote}
 The existence of effect size benchmarks should not justify abrogating the responsibility for arguing for effect import in the specific context of a given study. It is not necessary to have universal benchmarks regarding what effect sizes may be deemed noteworthy. The reader with a value system widely different than that of an author might reasonably disagree with the author about whether the effect size is noteworthy and then simply ignore the study.
@@ -368,7 +374,7 @@ Researchers have an obligation to make this kind of judgment. No one is in a bet
 \section*{Testing a Hypothesis of a Meaningful Effect}
 
 % Overview
-Once the researcher has clearly identified that set of effects that she considers substantively meaningful, the testing problem is straightforward. For an effect of interest $\Delta$, a researcher positing a ``substantively meaningful, positive effect'' must simply test her research hypothesis $H_r: \Delta > m$ against the null hypothesis $H_0: \Delta \leq m$. A researcher positing a ``substantively meaningful, negative effect'' must simply test her research hypothesis $H_r: \Delta < -m$ against the null hypothesis $H_0: \Delta \geq -m$.\footnote{Though rarely used in practice, this the way hypothesis testing is introduced in in introductory textbooks (e.g., \citealt{WonnacottWonnacott1990}).}
+Once the researcher has clearly identified that set of effects that she considers substantively meaningful, the testing problem is straightforward. For an effect of interest $\Delta$, a researcher positing a ``substantively meaningful, positive effect'' must simply test her research hypothesis $H_r: \Delta > m$ against the null hypothesis $H_0: \Delta \leq m$. A researcher positing a ``substantively meaningful, negative effect'' must simply test her research hypothesis $H_r: \Delta < -m$ against the null hypothesis $H_0: \Delta \geq -m$.\footnote{\baselineskip=2\normalbaselineskip Though rarely used in practice, this the way hypothesis testing is introduced in in introductory textbooks (e.g., \citealt{WonnacottWonnacott1990}).}
 
 % Example of the t-statistic
 The case of $t$-statistics illustrates the parallel between testing for a meaningful positive effect and simply testing for a positive effect. If a researcher simply wishes to argue that an effect is positive (though perhaps substantively irrelevant), the $t$-statistic is given by $t = \dfrac{\Delta}{\sqrt{\widehat{Var}(\Delta)}}$. If a researcher wishes to argue that an effect is positive and substantively meaningful, then the required $t$-statistic is given by $t = \dfrac{\Delta - m}{\sqrt{\widehat{Var}(\Delta)}}$. The researcher can then use this $t$-statistic to compute $p$-values and determine if the respective null hypothesis of ``no effect'' or ``a negligible effect'' can be rejected.
@@ -391,7 +397,7 @@ The precise logic of mathematics serves statistician and data analyst in derivat
 \noindent Thus, in practice, we suggest that researchers avoid choosing an arbitrary cut point and focus instead on interpreting the range of effects consistent with the data. This acknowledges the continuum between ``substantively meaningful'' and ``substantively negligible'' as well as the continuous strength of evidence for empirical claims. 
 
 % Use a soft interpretation
-Rather than pre-specifying $m$, we suggest that researchers take a ``softer'' approach and compute the confidence intervals for the substantively interpretable effects first. With the estimates and confidence intervals in hand, we suggest that researchers then interpret the range of effects contained in the confidence interval and only interpret the estimate as ``substantively significant'' if the confidence interval contains \emph{only} substantively meaningful values.\footnote{Note that this approach would work regardless of whether the researcher posts a meaningful, directional, or negligible effect \citep{Rainey2014}.} We recommend following Achen's (\citeyear{Achen1982}) advice.
+Rather than pre-specifying $m$, we suggest that researchers take a ``softer'' approach and compute the confidence intervals for the substantively interpretable effects first. With the estimates and confidence intervals in hand, we suggest that researchers then interpret the range of effects contained in the confidence interval and only interpret the estimate as ``substantively significant'' if the confidence interval contains \emph{only} substantively meaningful values.\footnote{\baselineskip=2\normalbaselineskip Note that this approach would work regardless of whether the researcher posts a meaningful, directional, or negligible effect \citep{Rainey2014}.} We recommend following Achen's (\citeyear{Achen1982}) advice.
 
 \begin{quote}
 What general advice can be given for interpreting confidence intervals? The best use of them depends on the problem at hand, and no universal instructions can be given. However, one rarely errs by giving a 95\% interval, explaining what the endpoints would mean substantively if each were true, and interpreting the overall results in such a way as to allow for the possibility that either of those endpoints is, in fact, the truth (p. 50).
@@ -523,8 +529,9 @@ In this paper, we have argued that researchers should explicitly test their subs
 We hope that our discussion encourages researchers to move beyond the current practice. We hope that researchers begin to make precise claims about substantive significance and offer compelling evidence for those claims using explicit tests for meaningful effects or ``softly'' interpreting the range of values in the confidence interval. Using this approach, researchers will (1) compute quantities that are of direct substantive interest, (2) clarify claims about the effects they consider theoretically and/or normatively important, and (3) take the uncertainly of the estimates into account when assessing the evidence for their substantive claims. This leads more transparent substantive claims and clearer communication of the empirical evidence for these claims.
 
 \singlespace 
+\newpage
 \normalsize
-\singlespace
+\doublespace
 \bibliographystyle{apsr_fs}
 % \bibliography{/Users/carlislerainey/Dropbox/papers/bibliography/bibliography.bib}
 \bibliography{/Users/kellymccaskey/Dropbox/Projects/bibliography/bibliography.bib}
