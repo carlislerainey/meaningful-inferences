@@ -15,7 +15,7 @@
 \usepackage{longtable}
 \usepackage{microtype}
 \usepackage{graphicx}
-%\usepackage{hyperref}
+\usepackage{hyperref}
 %\usepackage[usenames,dvipsnames]{color}
 \usepackage{url}
 \usepackage{natbib}
@@ -75,17 +75,17 @@
 \usepackage{color}
 \definecolor{darkred}{RGB}{100,0,0}
 
-%\hypersetup{
-% pdftitle={Meaningful Inferences}, % title
-% pdfauthor={Kelly McCaskey and Carlisle Rainey}, % author
-% pdfkeywords={hypothesis testing} {confidence intervals} {substantive significance}
-% pdfnewwindow=true, % links in new window
-% colorlinks=true, % false: boxed links; true: colored links
-% linkcolor=darkred, % color of internal links
-% citecolor=darkred, % color of links to bibliography
-% filecolor=darkred, % color of file links
-% urlcolor=darkred % color of external links
-%}
+\hypersetup{
+pdftitle={Meaningful Inferences}, % title
+pdfauthor={Kelly McCaskey and Carlisle Rainey}, % author
+pdfkeywords={hypothesis testing} {confidence intervals} {substantive significance}
+pdfnewwindow=true, % links in new window
+colorlinks=true, % false: boxed links; true: colored links
+linkcolor=darkred, % color of internal links
+citecolor=darkred, % color of links to bibliography
+filecolor=darkred, % color of file links
+urlcolor=darkred % color of external links
+}
 
 % enable comments in pdf
 \newcommand{\kelly}[1]{\textcolor{blue}{#1}}
@@ -96,21 +96,21 @@
 
 \begin{center}
 {\LARGE Meaningful Inferences}\\\vspace{2mm}
-{\large The Importance of Explicit Statistical Arguments for Substantive Significance\symbolfootnote[1]{We thank Lisa Hultman, Jacob Kathman, and Megan Shannon and Cindy Kam and Elizabeth Zechmeister for making their data available to us. The analyses presented here were conducted with \texttt{R} 3.1.0. All data and computer code necessary for replication are available at %\href{https://github.com/carlislerainey/meaningful-inferences}{
-github.com/carlislerainey/meaningful-inferences%}
+{\large The Importance of Explicit Statistical Arguments for Substantive Significance\symbolfootnote[1]{We thank Lisa Hultman, Jacob Kathman, and Megan Shannon and Cindy Kam and Elizabeth Zechmeister for making their data available to us. The analyses presented here were conducted with \texttt{R} 3.1.0. All data and computer code necessary for replication are available at \href{https://github.com/carlislerainey/meaningful-inferences}{
+github.com/carlislerainey/meaningful-inferences}
 .}}\\\vspace{2mm}
 
 
 \vspace{10mm}
 
-Kelly McCaskey\symbolfootnote[2]{Kelly McCaskey is a Ph.D. student in the Department of Political Science, University at Buffalo, SUNY, 520 Park Hall, Buffalo, NY 14260 (%\href{mailto:kellymcc@buffalo.edu}{
-kellymcc@buffalo.edu%}
+Kelly McCaskey\symbolfootnote[2]{Kelly McCaskey is a Ph.D. student in the Department of Political Science, University at Buffalo, SUNY, 520 Park Hall, Buffalo, NY 14260 (\href{mailto:kellymcc@buffalo.edu}{
+kellymcc@buffalo.edu}
 ).}
 
 \vspace{3mm}
 
-Carlisle Rainey\symbolfootnote[3]{Carlisle Rainey is Assistant Professor of Political Science, University at Buffalo, SUNY, 520 Park Hall, Buffalo, NY 14260 (%\href{mailto:rcrainey@buffalo.edu}{
-rcrainey@buffalo.edu%}
+Carlisle Rainey\symbolfootnote[3]{Carlisle Rainey is Assistant Professor of Political Science, University at Buffalo, SUNY, 520 Park Hall, Buffalo, NY 14260 (\href{mailto:rcrainey@buffalo.edu}{
+rcrainey@buffalo.edu}
 ).}
 \end{center}
 
@@ -124,6 +124,8 @@ Research in political science is gradually moving away from an exclusive focus o
 
 % Add quote to first page
 \epigraph{Far better an approximate answer to the \textit{right} question, which is often vague, than an exact answer to the \textit{wrong} question, which can always be made precise.}{\citet[pp. 13-14]{Tukey1962}}
+
+Manuscript word count: 7379
 
 % Remove page number from first page
 \thispagestyle{empty}
