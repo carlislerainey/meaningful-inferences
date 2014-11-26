@@ -137,7 +137,7 @@ Manuscript word count: 7379
 \section*{Introduction}
 
 % This paragraph gives an overview of the paper. However, I'm not sure that it is needed, since it largely duplicates the abstract. Instead, perhaps we should lead with examples of claims about substantive significance?
-Recent work in political science encourages researchers to move beyond statistical significance and focus on the \emph{substantive importance} of the \emph{magnitude} of the effect (e.g., \citealt{KingTomzWittenberg2000}; \citealt{HanmerKalkan2013}; and \citealt{EsareyDanneman2014}). The current practice argues for substantive importance by interpreting the magnitude of statistically significant estimates. If the estimate is substantively large, then the researcher concludes the effect is ``substantively and statistically significant.'' However, we do not find this approach compelling. Indeed, we argue that focusing \emph{only} on the magnitude of the estimated effect retains many of the flaws associated with focusing \emph{only} on statistical significance. Instead, researchers should take the uncertainty of the estimates into account when arguing for substantive significance. Following \cite{Gross2014} and \cite{Rainey2014}, we suggest that researchers carefully define the set of effects that are and are not substantively meaningful and then only make claims consistent with the range of effects in the confidence interval.
+Recent work in political science encourages researchers to move beyond statistical significance and focus on the \emph{substantive importance} of the \emph{magnitude} of the effect (e.g., \citealt{KingTomzWittenberg2000}; \citealt{HanmerKalkan2013}; and \citealt{EsareyDanneman2014}). The current practice argues for substantive importance by interpreting the magnitude of statistically significant estimates. If the estimate is substantively large, then the researcher concludes the effect is ``substantively and statistically significant.'' However, we do not find this approach compelling. Indeed, we argue that focusing \emph{only} on the magnitude of the estimated effect retains many of the flaws associated with focusing \emph{only} on statistical significance. Instead, researchers should take the uncertainty of the estimates into account when arguing for substantive significance. These ideas are not new; following \cite{Gross2014} and \cite{Rainey2014}, we suggest that researchers take a soft approach and carefully define the set of effects that are and are not substantively meaningful within the bounds of the theory and then only make claims consistent with the range of effects in the confidence interval.
 
 % There are three questions that political scientists care about.
 We contend that the best empirical political science concerns itself with three questions about the effects of interest. 
@@ -152,15 +152,15 @@ We contend that the best empirical political science concerns itself with three 
 \noindent Each of these questions requires increasing levels of analysis and substantive interpretation and each receives decreasing levels of attention in political science research. Virtually every research article in empirical science makes an argument about the direction of the effect using a null hypothesis significance test. Almost all of these articles report some measure of effect size, even if it is just in the form of a table of regression coefficients. 
 
 % The third is usually not.
-However, judgments about the importance of the effect are often missing. To get a sense of how often researchers address substantive importance (i.e., Are the effects large enough to care about?), we reviewed all articles published in the \textit{American Political Science Review} and the \textit{American Journal of Political Science} from 2011 to 2013. Of the 316 total articles, 73\% were empirical analyses. Of this 73\%, only about half make a judgment about the substantive importance of the estimated effect. Furthermore, of the articles that discuss the substantive importance of their results, only 17\% make an explicit argument that the estimates are substantively large and discuss these implications.
+However, judgments about the importance of the effect are often missing. To get a sense of how often researchers address substantive importance (i.e., Are the effects large enough to care about?), we reviewed all articles published in the \textit{American Political Science Review} and the \textit{American Journal of Political Science} from 2011 to 2013.\footnote{\baselineskip=2\normalbaselineskip To do this, we read the 316 articles published in the range of years and coded whether or not it was an empirical study. Of those that were empirical, if the author made the claim that the estimate was large because of some theory-based reason, they were coded as having made an explicit argument about the substantive nature of their results.}  Of the 316 total articles, 73\% were empirical analyses. Of this 73\%, only about half make a judgment about the substantive importance of the estimated effect. Furthermore, of the articles that discuss the substantive importance of their results, only 17\% make an explicit argument that the estimates are substantively large and discuss these implications.
 
 % Overview of the paper
-We begin by elaborating on the questions that political scientists typically ask about effects and explain the typical approaches to answering these questions. We then provide an overview of the much maligned sign-and-significance approach and the current best practice of magnitude-and-significance. Additionally, we explain why the magnitude-and-significance approach is only a small improvement over the sign-and-significance approach. As an alternative, we suggest that researchers carefully define the set of effects and are and are not substantively meaningful and then formally test the hypothesis that the estimated effect is substantively meaningful. We conclude with two empirical examples that highlight the importance of substantively interpreting the range of effects that are consistent with the data.
+We begin by elaborating on the questions that political scientists typically ask about effects and explain the typical approaches to answering these questions. We then provide an overview of the much maligned sign-and-significance approach and the current best practice of magnitude-and-significance. Additionally, we explain why the magnitude-and-significance approach is only a small improvement over the sign-and-significance approach. As an alternative, we suggest that researchers carefully define the set of effects that are and are not substantively meaningful and then formally test the hypothesis that the estimated effect is substantively meaningful. We conclude with two empirical examples that highlight the importance of substantively interpreting the range of effects that are consistent with the data.
 
 \section*{What We Want To Know}
 
 % What we mean by "an effect."
-Most empirical research in political science focuses on estimating the effect $\Delta$ of an explanatory variable $x$ on the expected value of an outcome of interest $y$. Formally, we might suppose that $E(y | x) = f(x)$ and define the ``effect'' or ``quantity of interest'' $\Delta$ as the difference between the average outcomes when $x$ takes on a substantively meaningful high value and low value, so that $\Delta = E(y | x = x_{hi}) - E(y | x = x_{lo}) = f(x_{hi}) - f(x_{lo})$. Importantly, empirical work usually focuses on answering three fundamental questions about the effect $\Delta$ of $x$ on $E(y|x)$. 
+Most empirical research in political science focuses on estimating the effect $\Delta$ of an explanatory variable $x$ on the expected value of an outcome of interest $y$. Formally, we might suppose that $E(y | x) = f(x)$ and define the ``effect'' or ``quantity of interest'' $\Delta$ as the difference between the average outcomes when $x$ takes on a substantively meaningful high value and low value, so that $\Delta = E(y | x = x_{hi}) - E(y | x = x_{lo}) = f(x_{hi}) - f(x_{lo})$. Importantly, empirical work usually focuses on answering three fundamental questions about the effect $\Delta$ of $x$ on $E(y|x)$. \carlisle{ctk: notation? re: reviewer 3}
 
 \begin{enumerate}
 \item What is the direction of the effect?
@@ -234,7 +234,7 @@ As an alternative, we suggest the explicit-test approach \citep{Gross2014}. To e
 \subsection*{Sign-and-Significance}
 
 % Overview of the SS approach
-Using the sign-and-significance approach, researchers declare an effect important if and only if the effect is statistically significant. That is, researchers simply test whether the effect is greater than (or less than) zero. If the they reject the null (e.g., $p < 0.05$), then they declare the effect to be substantively meaningful.
+Using the sign-and-significance approach, researchers declare an effect important if and only if the effect is statistically significant. That is, researchers simply test whether the effect is greater than (or less than) zero. If they reject the null (e.g., $p < 0.05$), then they declare the effect to be substantively meaningful.
 
 % The problems with the SS approach
 The much maligned (e.g., \citealt{Cohen1990}, \citealt{Gill1999}, \citealt{HillJones2014}, and \citealt{Gross2014}) sign-and-significance approach emphasizes $p$-values, but a minuscule $p$-value does not imply a large or important effect. The $p$-value depends on both the sample size and the effect size. It is true that the $p$-value gets smaller as the effect size under investigation increases. However, the $p$-value also decreases as the sample size increases, which is unrelated to the effect size. While it is common to describe estimates as ``highly significant'' or ``very significant,'' this implies (or tempts readers to conclude) that an effect is large or important. ``Very significant'' (e.g., $p < 0.001$) might simply mean that the researcher has a large sample. Even if the researcher finds statistically significant results with a small sample, the small $p$-value only indicates that the effect size is large relative to the uncertainty. It says nothing about the size of the estimate relative to some standard of substantive importance. With a very small $p$-value (e.g., $p < 0.001$), substantive experts might judge the effect to be large, moderate, small, or even negligible. Experts might call some of these effects important, somewhat important, slightly important, or not at all important. The $p$-value is indirectly related to substantive significance at best.
@@ -276,7 +276,7 @@ The magnitude-and-significance approach has three unfortunate consequences. It t
 
 \begin{enumerate}
 \item treat all statistically significant and substantively large estimates similarly, drawing no distinction between large, imprecise estimates and large, precise estimates.
-\item treat ``barely significant,'' large estimates and ``almost significant,'' large estimates quite differently, drawing a strong distinction between two similar estimates with similar uncertainty.
+\item treat ``barely significant'' large estimates and ``almost significant'' large estimates quite differently, drawing a strong distinction between two similar estimates with similar uncertainty.
 \item treat all results that are not statistically significant similarly, drawing no distinction between large, imprecise estimates and small, precise estimates (see Rainey 2014).
 \end{enumerate}
 
@@ -323,7 +323,7 @@ Study E & ``not statistically significant'' & ``not statistically significant'' 
 \end{table}
 
 % We need to be consistent with the standard of evidence
-It is important to apply similar standards of evidence to arguments for positive (or negative) and arguments for \emph{meaningfully} positive (or negative) effects. The usual logic of hypothesis testing requires that the researcher only declare that an effect is positive (or negative) if and only if the evidence overwhelmingly points toward a positive (or negative) effect. Similarly, researchers should not declare a positive estimate to be substantively meaningful simply because it is inconsistent with with negative effects and the point estimate lies above some threshold. A consistent standard of evidence requires that researchers declare an effect to be substantively meaningful if and only if it is inconsistent with negligible effects.
+It is important to apply similar standards of evidence to arguments for positive (or negative) effects and arguments for \emph{meaningfully} positive (or negative) effects. The usual logic of hypothesis testing requires that the researcher only declare that an effect is positive (or negative) if and only if the evidence overwhelmingly points toward a positive (or negative) effect. Similarly, researchers should not declare a positive estimate to be substantively meaningful simply because it is inconsistent with negative effects and the point estimate lies above some threshold. A consistent standard of evidence requires that researchers declare an effect to be substantively meaningful if and only if it is inconsistent with negligible effects.
 
 \section*{A Compelling Argument for a Meaningful Effect}
 
@@ -331,7 +331,7 @@ It is important to apply similar standards of evidence to arguments for positive
 Researchers can make much more compelling and transparent arguments for meaningful effects by explicitly testing the claims they are making. For example, if  a researcher claims that an effect is positive and substantively meaningful, then the research hypothesis is not $H_r: \Delta > 0$. Instead, it is $H_r: \Delta > m$, where $m$ represents the researcher's judgment about the smallest substantively interesting effect (or the largest substantively negligible effect). There is no need to jettison the entire hypothesis testing framework. In fact, the problems identified above can be addressed and the usual hypothesis testing framework can be kept intact if researchers are simply willing to apply their substantive judgment about which effects are and are not meaningful to their hypotheses rather than the estimated magnitude (see \citealt{Rainey2014} and \citealt{Gross2014}). 
 
 % The specific steps
-We propose the following procedure:
+While the PASS-test \citealt{Gross2014}, employs a comparison of results to a null set, we propose the following procedure to compare magnitude and significance:
 
 \begin{enumerate}
 \item Hypothesize that the effect is positive and substantively meaningful (or negative and substantively meaningful).
@@ -396,6 +396,8 @@ But do researchers need to specify a pre-chosen $m$ in \emph{practice}? Choosing
 The precise logic of mathematics serves statistician and data analyst in derivations--in theoretical structures which do help us in thinking about the world. But how we think about the world needs to be suitably imprecise. We dare not limit ourselves to such formal precision.
 \end{quote}
 
+\carlisle{ctk.: I think we need to put more emphasis these next two paragraphs. I think this is what is what readers need to take home}
+
 \noindent Thus, in practice, we suggest that researchers avoid choosing an arbitrary cut point and focus instead on interpreting the range of effects consistent with the data. This acknowledges the continuum between ``substantively meaningful'' and ``substantively negligible'' as well as the continuous strength of evidence for empirical claims. 
 
 % Use a soft interpretation
@@ -406,6 +408,8 @@ What general advice can be given for interpreting confidence intervals? The best
 \end{quote}
 
 \section*{Replication of Hultman, Kathman, and Shannon (2013)}
+
+\carlisle{ctk.: I think that Reviewer 2's confusion (in their last paragraph) comes from the fact that we do not set a ``hard \emph{m}" when replicating the two articles.}
 
 % Overview of HKS
 \cite{HultmanKathmanShannon2013} explain that civilians can be successfully protected by UN peacekeeping operations (PKOs) when those missions are composed of military troops and police in adequately large numbers. They argue that PKOs mitigate violence both on the battlefield and behind the battlefield's frontlines for a variety of reasons and that the UN's ability to intervene is contingent upon the size and personnel composition of the deployment.
