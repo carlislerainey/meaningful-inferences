@@ -88,7 +88,7 @@ urlcolor=blue % color of external links
 }
 
 % enable comments in pdf
-\newcommand{\kelly}[1]{\textcolor{blue}{#1}}
+\newcommand{\kelly}[1]{\textcolor{darkred}{#1}}
 \newcommand{\carlisle}[1]{\textcolor{magenta}{#1}}
 
 % April 6 Statistics Politics Policy submission
@@ -275,9 +275,9 @@ Notice that the magnitude-and-significance approach places uncertainty behind th
 \end{enumerate}
 
 % Frequency properties
-What can we say about the consequences of the magnitude-and-significance approach? In particular, what can we say about its frequentist properties? Consider the ideal properties of a test. Suppose the researcher wishes to evaluate the theoretical prediction that a variable of interest has a positive, substantively large effect. That is, she posits the research hypothesis $H_r: \Delta > m$, where $m$ represents the cutoff between meaningful and negligible effects (see \citealt{Rainey2014a}). $H_r$ implies the null hypothesis $H_0: \Delta \leq m$. Following conventional standard, we prefer (and readers expect) the researcher to use a procedure such that when the null hypothesis is true, the researcher rarely claims support for the research hypothesis. Formally, this requires that, for all $\Delta \leq m$, the probability of accepting the research hypothesis $H_r: \Delta > m$ (or rejecting the null hypothesis $H_0: \Delta \leq m$) must be sufficiently small, conventionally less than or equal to 0.05. We refer to a test that meets this requirement as a size-0.05 test.
+\kelly{What can we say about the consequences of the magnitude-and-significance approach? In particular, what can we say about its frequentist properties? Consider the ideal properties of a test. Suppose the researcher wishes to evaluate the theoretical prediction that a variable of interest has a positive, substantively large effect. That is, she posits the research hypothesis $H_r: \Delta > m$, where $m$ represents the cutoff between meaningful and negligible effects (see \citealt{Rainey2014a}). $H_r$ implies the null hypothesis $H_0: \Delta \leq m$. Following conventional standard, we prefer (and readers expect) the researcher to use a procedure such that when the null hypothesis is true, the researcher rarely claims support for the research hypothesis. Formally, this requires that, for all $\Delta \leq m$, the probability of accepting the research hypothesis $H_r: \Delta > m$ (or rejecting the null hypothesis $H_0: \Delta \leq m$) must be sufficiently small, conventionally less than or equal to 0.05. We refer to a test that meets this requirement as a size-0.05 test.}
 
-The magnitude-and-significance approach is not a size-0.05 test of the research hypothesis that a variable has a meaningful effect. Under the null hypothesis, the probability of accepting the research hypothesis might be as large as 0.50--a coin flip. Further, this can easily occur in actual analyses. For example, suppose an estimator $\hat{\Delta} \sim N(\Delta, \sigma^2)$ with standard error $\sigma < \frac{m}{1.64}$. If $\Delta = m$ (i.e., the null hypothesis holds), then the probability that $\hat{\Delta} > \Delta$ equals 0.50 and each of these estimates is also statistically significant. That is, even when the effect is actually negligible, the researcher using the magnitude-and-significance approach risks claiming ``substantive significance'' much too often.
+\kelly{The magnitude-and-significance approach is not a size-0.05 test of the research hypothesis that a variable has a meaningful effect. Under the null hypothesis, the probability of accepting the research hypothesis might be as large as 0.50--a coin flip. Further, this can easily occur in actual analyses. For example, suppose an estimator $\hat{\Delta} \sim N(\Delta, \sigma^2)$ with standard error $\sigma < \frac{m}{1.64}$. If $\Delta = m$ (i.e., the null hypothesis holds), then the probability that $\hat{\Delta} > \Delta$ equals 0.50 and each of these estimates is also statistically significant. That is, even when the effect is actually negligible, the researcher using the magnitude-and-significance approach risks claiming ``substantive significance'' much too often.}
 
 % Introduce the example cis figure
 Consider, for example, the hypothetical studies presented in Figure \ref{fig:example-cis}. If we are interested in substantive significance and consider 0.25 as the cutoff between meaningful and negligible effects, then only one study, Study A, seems to offer strong evidence for a substantively meaningful effect. Studies B and C offer ambiguous evidence for a meaningful effect and Studies D and E offer evidence \emph{against} a meaningful effect.
@@ -353,14 +353,15 @@ What general advice can be given for interpreting confidence intervals? The best
 \end{quote}
 
 % for reviewer 1, to briefly provide a couple of guidelines for scholars to use in determining what values count as "substantively meaningful"
-\section*{Suggestions for Substantive Researchers}
-For the researcher making claims of substantive significance, we suggest the following strategy:
+\kelly{\section*{Suggestions for Substantive Researchers}}
+
+\kelly{For the researcher making claims of substantive significance, we suggest the following strategy:
 \begin{enumerate}
 \item Compute 90\% confidence intervals around the estimated effects. 
 \item Interpret each endpoint of the interval.
 \item Claim that the effect is substantively meaningful if and only if all effects in the confidence interval are substantively meaningful.
 \end{enumerate}
-Providing confidence intervals around estimated effects and interpreting the endpoints allows the researcher to provide the reader with a range of plausible effects--after all, the point estimate is simply a best guess. While statistical significance tests (e.g., $p$-values and stars) obscure uncertainty, our approach emphasizes and clarifies uncertainty, providing readers with more complete information and allowing them to more fully anticipate the possible consequences of an action.
+Providing confidence intervals around estimated effects and interpreting the endpoints allows the researcher to provide the reader with a range of plausible effects--after all, the point estimate is simply a best guess. While statistical significance tests (e.g., $p$-values and stars) obscure uncertainty, our approach emphasizes and clarifies uncertainty, providing readers with more complete information and allowing them to more fully anticipate the possible consequences of an action.}
 
 \section*{Reanalysis of Hultman, Kathman, and Shannon (2013)}
 
@@ -415,38 +416,38 @@ To assess whether their substantive claim is robust to accounting for the uncert
 % summary of our point
 In this case, the authors indeed have strong evidence for a \emph{dramatic effect}, even after uncertainty is taken into account. While the data support their claim, the authors can make an even stronger argument for a meaningful effect by substantively interpreting the range of plausible values rather than focusing narrowly on the point estimate. 
 
-\section*{Reanalysis of Kam and Zechmeister (2013)}
+\kelly{\section*{Reanalysis of Kam and Zechmeister (2013)}}
 
 % overview of kz
-As a second example, we also reanalyze data from \cite{KamZechmeister2013}. Kam and Zechmeister argue that name recognition increases a candidate's support directly, by increasing the candidate's approval, and indirectly, by informing voters about the candidate's viability. The authors present three lab experiments to demonstrate the causal link between their concepts of interest, but they use a field experiment to boost the external validity of the laboratory results and to establish their substantive importance. 
+\kelly{As a second example, we also reanalyze data from \cite{KamZechmeister2013}. Kam and Zechmeister argue that name recognition increases a candidate's support directly, by increasing the candidate's approval, and indirectly, by informing voters about the candidate's viability. The authors present three lab experiments to demonstrate the causal link between their concepts of interest, but they use a field experiment to boost the external validity of the laboratory results and to establish their substantive importance.}
 
 % the basic design
-Through a clever design exploiting routes that parents must use to drop their kids off at school, Kam and Zechmeister expose half of parents in a particular geographic region to four yard signs displaying fictitious candidate Ben Griffin's name. The other half of parents are not exposed to any name and serve as a control group. The authors then survey the parents and ask them to indicate their top three choices for city council seats by choosing among five actual candidates and two fictional candidates (Ben Griffin, whose name appeared on yard signs and Milt Jenkins, whose name did not appear on any signs and who serves as a placebo). 
+\kelly{Through a clever design exploiting routes that parents must use to drop their kids off at school, Kam and Zechmeister expose half of parents in a particular geographic region to four yard signs displaying fictitious candidate Ben Griffin's name. The other half of parents are not exposed to any name and serve as a control group. The authors then survey the parents and ask them to indicate their top three choices for city council seats by choosing among five actual candidates and two fictional candidates (Ben Griffin, whose name appeared on yard signs and Milt Jenkins, whose name did not appear on any signs and who serves as a placebo).}
 
 % the basic results
-The authors summarize their results:
+\kelly{The authors summarize their results:}
 
-\begin{quote}
+\kelly{\begin{quote}
 Did recognition spurred on by political yard signs increase support for Ben Griffin in the treatment group? To determine if this is so, we examine the extent to which survey respondents selected Ben Griffin as one of their top three choices for council. As shown in [their] Table 3, in the control condition, only 13.9\% of respondents placed Ben Griffin among their top three choices, but in the treatment condition, 23.9\% of respondents placed Ben Griffin among their top three choices. This 10 percentage point difference is sizable given the modesty of the treatment. In light of the small sample size, it is statistically significant at generous levels ($p \approx 0.13$, one-tailed) (p. 983).
-\end{quote}
+\end{quote}}
 
-\noindent They continue:
+\kelly{\noindent They continue:}
 
-\begin{quote}
+\kelly{\begin{quote}
 [W]e can examine the rates of selection of the two fictitious names, within each condition. Among the treated subjects, 23.9\% of subjects placed Ben Griffin in the top three set, but only 13.0\% placed Milt Jenkins in the top three set, a statistically significant difference at p < 0.09, one-tailed. Among the control subjects, 13.9\% placed Ben Griffin in the top three set, and the identical percentage, 13.9\%, placed Milt Jenkins in the top three set. The results from this field study lend generalizability to the claim established in our laboratory studies: name recognition increases candidate support in low-information elections (p. 983)
-\end{quote}
+\end{quote}}
 
 % are their claims robust to considering uncertainty?
-Can we be confident that this effect is indeed ``sizable''? Are small effects plausible given the data? Figure \ref{fig:kz-ci} shows the estimated effects and 90\% confidence intervals. Notice that while the estimated effects are of borderline statistical significance, the estimated effects of about 10 percentage points are quite large. However, much smaller effects are plausible as well. The authors cannot reject even the tiniest of effects with these data. While we agree with the authors that an effect of ten percentage points is indeed ``sizable,'' their data are also consistent with small, negligible effects. As such, these data do not offer compelling evidence for a substantively meaningful effect.
+\kelly{Can we be confident that this effect is indeed ``sizable''? Are small effects plausible given the data? Figure \ref{fig:kz-ci} shows the estimated effects and 90\% confidence intervals. Notice that while the estimated effects are of borderline statistical significance, the estimated effects of about 10 percentage points are quite large. However, much smaller effects are plausible as well. The authors cannot reject even the tiniest of effects with these data. While we agree with the authors that an effect of ten percentage points is indeed ``sizable,'' their data are also consistent with small, negligible effects. As such, these data do not offer compelling evidence for a substantively meaningful effect.}
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale = .8]{figs/kz-ci.pdf}
-\caption{This figure provides the estimated treatment effect and 90\% confidence intervals of placing candidate roadsigns along a street that citizens regularly drive on the probability of ranking the named candidate in the top three of seven candidates. The top estimate compares the treatment with the control group (i.e., parents driving along different routes), and the bottom estimate compares the named candidate to the placebo candidate among parents driving along the route with the yard signs.}\label{fig:kz-ci}
+\caption{\kelly{This figure provides the estimated treatment effect and 90\% confidence intervals of placing candidate roadsigns along a street that citizens regularly drive on the probability of ranking the named candidate in the top three of seven candidates. The top estimate compares the treatment with the control group (i.e., parents driving along different routes), and the bottom estimate compares the named candidate to the placebo candidate among parents driving along the route with the yard signs.}}\label{fig:kz-ci}
 \end{center}
 \end{figure}
 
-These two examples clearly show that uncertainty in estimated effects matters \textit{substantively}. Researchers should not hide uncertainty behind a veil of statistical significance nor treat uncertainty as a secondary concern. If researchers care about the magnitude of effects, then the range of possibilities should receive as least a much attention as the point estimate.
+\kelly{These two examples clearly show that uncertainty in estimated effects matters \textit{substantively}. Researchers should not hide uncertainty behind a veil of statistical significance nor treat uncertainty as a secondary concern. If researchers care about the magnitude of effects, then the range of possibilities should receive as least a much attention as the point estimate.}
 
 \subsection*{Conclusion}
 
