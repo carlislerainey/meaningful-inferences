@@ -37,7 +37,7 @@ est2 <- m2$estimate[1] - m2$estimate[2]
 pdf("doc/figs/kz-ci.pdf", height = 3, width = 5)
 par(mfrow = c(1, 1), mar = c(5, 1, 1, 1), oma = c(0, 0, 0, 0))
 eplot(xlim = c(-.1, .3), ylim = c(0, 1),
-      xlab = "Estiamted Treatment Effect\nand 90% Confidence Interval",
+      xlab = "Estimated Treatment Effect\nand 90% Confidence Interval",
       xlabpos = 2.5,
       anny = FALSE)
 abline(v = 0, lty = 3, lwd = 3, col = "grey50")
